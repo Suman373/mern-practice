@@ -24,5 +24,5 @@ const PORT = process.env.PORT || 5000;
 
 // function to connect with db : 3params : url, obj (2options), returns a promise
 mongoose.connect(CONN_URL , { useNewUrlParser:true , useUnifiedTopology :true})
-    .then(()=> app.listen(PORT,()=> console.log(`Server succesfully running on port ${PORT}`)))// when conn is established
+    .then(()=> app.listen(PORT,()=> console.log(`Db connected Server succesfully running on port ${PORT}`)))// when conn is established
     .catch((error)=> console.log(`Error is ${error.message}`)) // error

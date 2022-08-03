@@ -3,6 +3,7 @@ import  * as api from '../api';
 
 // ***ACTION CREATORS : funcs that return / dispatches some specific action****
 // thunk allows us achieve async functionality with additional arrow function
+// fetch post
 export const getPosts = ()=> async(dispatch)=>{
 
         try {
@@ -17,4 +18,13 @@ export const getPosts = ()=> async(dispatch)=>{
 
 }
 
+// create post
+export const createPost = (post)=> async(dispatch)=>{
+    try {
+        const {data} = await api.createPost(post); // post array
+        dispatch({type: 'CREATE', payload:data}); 
+    } catch (error) {
+        console.log(error);
+    }
+}
 

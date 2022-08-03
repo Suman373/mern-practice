@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector} from 'react-redux';
 import {Container , Typography} from '@material-ui/core';
 import Post from './Post/Post.jsx';
-import useStyles from  './styles/PostsStyle';
+import useStyles from  './PostsStyle';
 
 const Posts = ()=>{
     // class for styling objects

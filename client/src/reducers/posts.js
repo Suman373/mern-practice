@@ -4,7 +4,7 @@ const reducer = (posts = [],action)=>{
         case 'FETCH_ALL':
             return action.payload; // all the posts
         case 'CREATE':
-            return posts;
+            return [...posts,action.payload];
         default:
             return posts;
     }

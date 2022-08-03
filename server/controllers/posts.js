@@ -11,8 +11,8 @@ const getPosts = async (req,res)=>{
 
         res.status(200).json(postMessages);
         
-    } catch (err) {
-        res.status(404).json({message: err.message});
+    } catch (error) {
+        res.status(404).json({message: error.message});
     }
 }
 
@@ -23,14 +23,12 @@ const createPost = async (req,res)=>{
 
     // new post will pass the post to the parent method
     const newPost = new PostMessage(post);
-   
-    res.send('THis is the create post');
 
     try{
         await newPost.save(); // new post saved success
         res.status(201).json(newPost);
-    }catch(err){
-        res.status(409).json({message: err.message});
+    }catch(error){
+        res.status(409).json({ message: error.message});
     }
 }
 

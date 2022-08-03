@@ -4,12 +4,11 @@ import {makeStyles} from '@material-ui/core/styles';
 export default makeStyles(()=>({
     postsContainer:{
         minHeight:'100vh',
-        width:'calc(100% - 1rem)',
+        width:'100vw',
         display:'flex',
         justifyContent:'center',
         // alignItems:"center",
         flexWrap:'wrap',
-        background:'black'
     },
     titleStyle:{
         fontSize:'1.8rem',

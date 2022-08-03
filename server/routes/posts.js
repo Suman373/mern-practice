@@ -12,7 +12,7 @@ const {getPosts , createPost} = require('../controllers/posts.js');
 router.get('/', getPosts); // logics in the controllers/posts.js
 
 //  createPost
-router.get('/createPost', createPost);
+router.post('/', createPost);
 
 //export router 
 module.exports = router; // alt: export default router; when using import export
