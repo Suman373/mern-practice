@@ -1,17 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import './App.css'
-import { Container, AppBar, Typography } from '@material-ui/core';
+
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import Form from './components/Form/Form';
 import Posts from './components/Posts/Posts.jsx';
 import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/Banner/Banner';
+import Contact from "./pages/Contact";
 import { getPosts } from './actions/posts';
 import useStyles from './AppStyle';
 import { AiOutlineArrowUp } from 'react-icons/ai';
-
+import { BrowserRouter as BRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
     // style class
@@ -30,38 +31,44 @@ const App = () => {
     let position;
     window.addEventListener('scroll', () => {
         position = window.pageYOffset;
+        // console.log(position);
+        position > 200 ? setShowScroll(true) : setShowScroll(false);
     })
 
-    const [showScroll, setShowScroll] = useState(false);
-    useEffect(() => {
-        position > 500 ? setShowScroll(true) : setShowScroll(false);
-    }, [position])
+    const [showScroll, setShowScroll] = useState(true);
 
     //scroll
     const scrollFunction = () => {
         window.scrollTo(0, 0);
     }
     return (
-        <div>
-            <Navbar />
-            {showScroll ?
-                <button
-                    className={classes.scrollBtn}
-                    onClick={() => scrollFunction()}>
-                    <AiOutlineArrowUp></AiOutlineArrowUp>
-                </button> : ""}
-            <Banner />
-            <Container className={classes.appContainer}>
-                <Container>
-                    {/* form for create */}
-                    <Form />
-                </Container>
-                <Container>
-                    {/* container for showing posts */}
-                    <Posts />
-                </Container>
-            </Container>
-        </div>
+        <BRouter>
+            <div>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={
+                        <Banner />
+                    }>
+                    </Route>
+                    <Route path="/checkPosts" element={
+                        <>
+                            {showScroll ?
+                                <button
+                                    className={classes.scrollBtn}
+                                    onClick={() => scrollFunction()}>
+                                    <AiOutlineArrowUp></AiOutlineArrowUp>
+                                </button> : ""}
+                            <Form />
+                            <Posts />
+                        </>
+                    }>
+                    </Route>
+                </Routes>
+            </div>
+            <Routes>
+                <Route exact path="/contact" element={<Contact />}></Route>
+            </Routes>
+        </BRouter >
     )
 }
 export default App;

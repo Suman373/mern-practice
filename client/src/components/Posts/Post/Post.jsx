@@ -1,27 +1,45 @@
 import React from "react";
-import Flowers from './postAssets/Flowers.jpeg';
-import {Typography , Container} from '@material-ui/core';
+import {Typography , Container, CardMedia} from '@material-ui/core';
+import {BsHeart,BsBookmark} from 'react-icons/bs';
+import {BiComment} from 'react-icons/bi';
+import {FaShare} from 'react-icons/fa';
+import moment from 'moment';
 import useStyles from './PostStyle';
 
-const Post=()=>{
+const Post=({post})=>{
     // class for fetching styling objects
     const classes = useStyles();
     return(
         <Container className={classes.postContainer}>
+           
+            <CardMedia
+             className={classes.mediaCard} 
+             image={post.selectedFile}
+             title={post.title} />
+            
+           <div className={classes.infoContainer}>
+           <Typography className={classes.username}>
+                {post.creator}
+            </Typography>
 
-            <Typography className={classes.username}>
-                Random name
+            <Typography className={classes.postTitle}>
+                {post.title}
+            </Typography>
+               
+            <Typography>
+                 {moment(post.createdAt).fromNow()}
             </Typography>
 
             <Typography className={classes.description}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque quibusdam ad magni quod veniam. 
+               {post.description} 
             </Typography>
-
-            <img 
-            className={classes.postImage} 
-            src={Flowers} 
-            alt="flower pic" />
-            
+           </div>
+           <div className={classes.actionsContainer}>
+                <BsHeart />
+                <BiComment/>
+                <BsBookmark/>
+                <FaShare/>
+            </div>
         </Container>
     )
 }

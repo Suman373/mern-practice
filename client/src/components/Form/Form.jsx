@@ -1,7 +1,8 @@
 import React from "react";
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { TextareaAutosize, Container, Typography } from '@material-ui/core';
 import Button from "../Buttons/Button";
+import FileBase from 'react-file-base64';
 import useStyles from "./FormStyle";
 import {AiFillCloseCircle} from 'react-icons/ai';
 import { useDispatch} from 'react-redux';
@@ -16,8 +17,8 @@ const Form = () => {
         creator: '',
         title: '',
         description: '',
-        tag: '',
-        selectedFiles: '',
+        tags: '',
+        selectedFile: '',
     });
     
     // dispatcher
@@ -28,34 +29,43 @@ const Form = () => {
     const [ postForm , setPostForm] = useState(false);
     // state for showing cleared message
     const  [clearMessage , setClearMessage] = useState(false);
-
-    // handling add button
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        dispatch(createPost(postData)); // send postData, to actions then reducer
-    }
+    let neededMessage = "";
 
     // handling form clear
     const handleClear = (e)=>{
+        e.preventDefault();
         setPostData({});
-        console.log(postData);
         setPostForm(false);
     }
 
+    // handling add button
+    const handleSubmit = (e) => {
+        // e.preventDefault();
+        dispatch(createPost(postData)); // send postData, to actions then reducer
+        setPostData({});
+        setPostForm(!postForm);
+    }
 
 
     return (
        <>
-       <Container id={'create'} className={classes.wrapper}>
+       <Container className={classes.wrapper}>
+        <h2 className={classes.headingStyle}>Share your moments, let others know </h2>
          { postForm ? //form open
           <Container
             className={classes.formContainer}>
-                <button onClick={()=> setPostForm(!postForm)} className={classes.closeBtnStyle}><AiFillCloseCircle></AiFillCloseCircle></button>
+                <button 
+                onClick={()=> setPostForm(!postForm)}
+                 className={classes.closeBtnStyle}>
+                    <AiFillCloseCircle></AiFillCloseCircle>
+                </button>
             <Typography className={classes.createPostTitle}>
                 Create a new post
             </Typography>
 
+            <form autoComplete="off"  className={classes.formControl}>
             <input
+                required
                 type="text"
                 className={classes.creator_title_tag_style}
                 placeholder={'Name of creator'}
@@ -64,6 +74,7 @@ const Form = () => {
             </input>
 
             <input
+                required
                 type="text"
                 className={classes.creator_title_tag_style}
                 value={postData.title}
@@ -73,6 +84,7 @@ const Form = () => {
 
             <TextareaAutosize
                 variant='filled'
+                required
                 minRows={5}
                 maxRows={5}
                 className={classes.textFieldStyle}
@@ -82,29 +94,42 @@ const Form = () => {
             </TextareaAutosize>
 
             <input
-                variant="filled"
-                placeholder={'Enter tags'}
+                placeholder={'Enter tags, comma separated'}
                 className={classes.creator_title_tag_style}
-                value={postData.tag}
-                onChange={(e) => setPostData({ ...postData, tag: e.target.value })}>
+                value={postData.tags}
+                onChange={(e) => setPostData({ ...postData, tags: e.target.value })}>
 
             </input>
+        
+
+            <div className={classes.fileUpload}>
+                <FileBase
+                style={{textAlign:'center'}}
+                type="file"
+                multiple={false}
+                onDone={({base64}) => setPostData({...postData, selectedFile: base64})}
+                />
+            </div>
+
+            </form>
 
            <div style={{display:'flex', justifyContent:'center'}}>
-           <Button children={'Post'} onClick={(e) => handleSubmit(e)} style={{ margin: '1rem' }} />
-            <Button children={'Clear'} onClick={(e) => handleClear(e)} style={{ margin: '1rem' }} />
+           <Button text={'Post'} onClick={(e)=>handleSubmit(e)} style={{ margin: '1rem' }} />
+            <Button text={'Clear'} onClick={(e) => handleClear(e)} style={{ margin: '1rem' }} />
            </div>
+
+       
         </Container> : 
         // when form is closed
         <>
         <Button
-       onClick={()=>{
+        onClick={()=>{
         setClearMessage(!clearMessage); // show form cleared
         setTimeout(()=> setClearMessage(false),4000); // dont'show
         setPostForm(!postForm);
        }}
-       children={'Create post'}/>
-      { clearMessage ?  <Typography className={classes.formClearedMessage}>Form has been cleared</Typography> : ''}
+       text={'Create new'}/>
+      { clearMessage ?  <Typography className={classes.formClearedMessage}>{neededMessage}</Typography> : ''}
         </>
      }
        </Container>

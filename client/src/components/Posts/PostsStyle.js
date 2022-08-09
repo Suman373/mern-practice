@@ -7,13 +7,14 @@ export default makeStyles(()=>({
         width:'100vw',
         display:'flex',
         justifyContent:'center',
-        // alignItems:"center",
+        alignItems:'center',
         flexWrap:'wrap',
     },
     titleStyle:{
-        fontSize:'1.8rem',
-        color:'#c9ae19',
+        fontSize:'2rem',
+        color:'blue',
         textAlign:"center",
-        margin:'1rem'
+        margin:'1rem',
+        fontFamily:'Lobster,cursive'
     }
 }));

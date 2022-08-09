@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // uniformity to each posts through schema, which is set as an object
 const postSchema = mongoose.Schema({
     title: String,
-    message : String,
+    description : String,
     creator : String,
     tags: [String],
     selectedFile : String,

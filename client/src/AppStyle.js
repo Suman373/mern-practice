@@ -1,12 +1,6 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 export default makeStyles(()=>({
-
-    appContainer:{
-        width:'inherit',
-        position:'relative',
-        overflowX:'hidden'
-    },
     scrollBtn:{
         position:'fixed',
          height:'3rem',
@@ -17,8 +11,9 @@ export default makeStyles(()=>({
         borderRadius:'30%',
         right:'1rem',
         bottom:'1rem',
+        border:'none',
         cursor:'pointer',
-        background:'blue',
+        background:'linear-gradient(30deg,hotpink,blue)',
         zIndex:'9999',
         animation:`$floataway 2000ms infinite`,
         transition:'animation 500ms ease-in-out'
