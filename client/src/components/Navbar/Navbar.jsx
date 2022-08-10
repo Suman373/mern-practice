@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import useStyles from './NavbarStyle'; // makeStyles
-import { Typography, Container } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import Button from '../Buttons/Button';
+import {RiMenu5Fill} from 'react-icons/ri';
 import './Navbar.css';
 
 const Navbar=()=>{
@@ -10,13 +11,17 @@ const Navbar=()=>{
     const classes = useStyles();
 
     const [hamburgerOpen , setHamburgerOpen] = useState(false);
-    // const [burgerButton, setBurgerButton] = useState(false);
 
-    let screenWidth;
-    window.addEventListener('resize',()=>{
-        screenWidth = window.innerWidth ;
-        // console.log(screenWidth);
-        // screenWidth < 600 ? setHamburgerOpen(true) : setHamburgerOpen(false);
+    const handleToggle=(e)=>{
+        e.preventDefault();
+        setHamburgerOpen(!hamburgerOpen);
+    }
+    // resize event
+    let width;
+    window.addEventListener("resize",()=>{
+        // to prevent the menu collapse due to media query 
+        width = window.innerWidth;
+        width < 600 ? setHamburgerOpen(false) : setHamburgerOpen(true);
     })
 
     return(
@@ -29,7 +34,7 @@ const Navbar=()=>{
                 Souvenir
             </Typography>
 
-            <div  className={hamburgerOpen ? "menuContainer open" : "menuContainer"}>
+            <div  className={!hamburgerOpen ? "menuContainer" : "menuContainer open"}>
          
                 <Link to={'/#home'}>Home</Link>
                 <Link to={'/checkPosts'}>Posts</Link>
@@ -39,14 +44,15 @@ const Navbar=()=>{
                 {/* sign in / login*/}
                 <Link to={'/login'}>
                     <Button
-                     style={{fontSize:'1.1rem',padding:'8px'}}
                      text={'Sign in'}/>
                 </Link>
             </div>
             <button 
                className="toggleButton"
-               onClick={()=> setHamburgerOpen(!hamburgerOpen)}>
-                X
+               onClick={(e)=> {
+                   handleToggle(e)
+               }}>
+                <RiMenu5Fill/>
             </button> 
         </nav>
     );

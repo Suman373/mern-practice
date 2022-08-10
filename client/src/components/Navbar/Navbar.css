@@ -27,23 +27,53 @@
     color: purple;
 }
  .toggleButton{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding:5px;
     background:transparent;
     color:blue;
     cursor: pointer;
     position:absolute;
+    border:none;
     top:0;
     right:1rem;
     z-index: 1000;
+    display:none;
 }
 
-.menuContainer.open{
-    background:black;
+
+@media screen and (max-width:700px){
+    .menuContainer a{
+        font-size: 1.2rem;
+        margin:8px;
+    }
+    .navBarStyle{
+        height:3rem;
+    }
+}
+
+@media screen and (max-width:530px){
+    .menuContainer{
+        visibility: hidden;
+        transform:translateX(200px);
+    }
+   
+    .menuContainer.open{
+    visibility: visible;
+    background:#f0eeee;
+    border-left: 1px solid grey;
     flex-direction: column;
-    height:100vh;
+    position:absolute;
+    margin-top: 15rem;
+    justify-content: center;
+    height:52rem;
     font-size: 1.3rem;
     width:15rem;
     right:0;
-    
+    transition:transform 500ms;
+    transform:translateX(5px);
+}
+    .toggleButton{
+        display:block;
+
+    }
 }

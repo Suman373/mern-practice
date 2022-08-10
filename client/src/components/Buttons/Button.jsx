@@ -6,7 +6,7 @@ const useStyles=makeStyles(()=>({
     btnStyle:{
         fontSize:'1.3rem',
         width:'fit-content',
-        padding:'10px 0.8rem',
+        padding:'8px 0.8rem',
         background:'linear-gradient(30deg,hotpink,blue)',
         color:'white',
         margin:'0.5rem',
@@ -15,9 +15,14 @@ const useStyles=makeStyles(()=>({
         cursor:'pointer',
         '&:hover':{
             opacity:'0.8',
-            // background:'linear-gradient(30deg,hotpink,blue,green)',
             boxShadow:'0 0 4px black ',
             transform:'scale(1.05)',
+        },
+        '@media(max-width:700px)':{
+            fontSize:'1.2rem',
+        },
+        '@media(max-width:400px)':{
+            fontSize:'1.1rem',
         }
     }
 }))

@@ -16,9 +16,13 @@ export default makeStyles(()=>({
       margin:'0 auto',
       width:'25rem',
       height:'12rem',
-      "@media(max-width:600px)":{
+      "@media(max-width:700px)":{
         width:'18rem',
         height:'8rem'
+      },
+      "@media(max-width:400px)":{
+        width:'12rem',
+        height:'7rem'
       }
     },
     bannerTitle:{
@@ -27,9 +31,12 @@ export default makeStyles(()=>({
         textShadow:'0 0 2px blue',
         transition: 'animation 2000ms',
         animation:"$changeColor 4000ms ease-in-out infinite",
-        '@media(max-width:600px)':{
+        '@media(max-width:700px)':{
             fontSize:'3rem',
         },
+        '@media(max-width:400px)':{
+            fontSize:'2.4rem'
+        }
     },
     "@keyframes changeColor":{
         "30%":{color:'#661a66',textShadow:'0 0 2px #661a66 '},
@@ -38,9 +45,13 @@ export default makeStyles(()=>({
     },
     caption:{
         fontSize:'2.1rem',
+        margin:'1rem',
         color:'blue',
-        '@media(max-width:600px)':{
+        '@media(max-width:700px)':{
             fontSize:'1.8rem',
+        },
+        '@media(max-width:400px)':{
+            fontSize:'1.3rem',
         },
     }
 }))

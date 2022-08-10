@@ -8,11 +8,14 @@ export default makeStyles(() => ({
         color: 'blue',
         margin: '2rem',
         fontFamily: 'Lobster, cursive',
-        '@media(max-width:600px)': {
+        '@media(max-width:700px)': {
             fontSize: '2rem',
             margin: '1rem',
-            color: 'black'
         },
+        '@media(max-width:400px)': {
+            fontSize: '1.7rem',
+        },
+        
     }
 }
 ))

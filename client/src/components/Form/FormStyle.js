@@ -4,12 +4,21 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(() => ({
     wrapper: {
         margin: '2rem auto',
-        textAlign: 'center'
+        textAlign: 'center',
+        '@media(max-width:400px)':{
+            margin:'3rem auto'
+        }
     },
     headingStyle: {
         fontSize: '2.6rem',
         color: 'blue',
         marginBottom: '1rem',
+        '@media(max-width:700px)': {
+            fontSize: '2.1rem',
+        },
+        '@media(max-width:400px)': {
+            fontSize: '1.7rem',
+        },
     },
     formContainer: {
         minHeight: '30rem',
@@ -50,7 +59,13 @@ export default makeStyles(() => ({
         fontFamily: 'serif',
         margin: '1rem',
         fontWeight:'600',
-        color: "blue"
+        color: "blue",
+        '@media(max-width:700px)': {
+            fontSize: '1.5rem',
+        },
+        '@media(max-width:400px)': {
+            fontSize: '1.2rem',
+        },
     },
     creator_title_tag_style: {
         outline: 'none',
