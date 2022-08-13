@@ -5,8 +5,9 @@ export default makeStyles(() => ({
     wrapper: {
         margin: '2rem auto',
         textAlign: 'center',
+        overflowX:'hidden',
         '@media(max-width:400px)':{
-            margin:'3rem auto'
+            margin:'3rem auto',
         }
     },
     headingStyle: {
@@ -17,7 +18,7 @@ export default makeStyles(() => ({
             fontSize: '2.1rem',
         },
         '@media(max-width:400px)': {
-            fontSize: '1.7rem',
+            fontSize: '1.6rem',
         },
     },
     formContainer: {
@@ -32,8 +33,21 @@ export default makeStyles(() => ({
         textAlign: 'center',
         border: 'none',
         borderRadius:'1rem',
+        marginBottom:'10px',
         position: 'relative',
-        boxShadow: '0 0 2px black'
+        boxShadow: '0 0 2px black',
+        "@media(max-width:700px)":{
+            width:'30rem',
+            minHeight:'27.5rem',
+        },
+        "@media(max-width:500px)":{
+            width:'22rem',
+            margin:'0 auto'
+        },
+        "@media(max-width:400px)":{
+            width:'20rem',
+            height:'30rem'
+        }
     },
     formContainer_closed: {
         display: 'none'
@@ -47,7 +61,14 @@ export default makeStyles(() => ({
         border: 'none',
         cursor: 'pointer',
         background: 'transparent',
-        color: 'red'
+        color: 'red',
+        '@media(max-width:700px)': {
+            fontSize: '1.5rem',
+        },
+        '@media(max-width:400px)': {
+            fontSize: '1.3rem',
+        },
+
     },
     formControl:{
         display:'flex',
@@ -64,7 +85,7 @@ export default makeStyles(() => ({
             fontSize: '1.5rem',
         },
         '@media(max-width:400px)': {
-            fontSize: '1.2rem',
+            fontSize: '1.3rem',
         },
     },
     creator_title_tag_style: {
@@ -72,11 +93,22 @@ export default makeStyles(() => ({
         border: 'none',
         fontSize: '1.2rem',
         padding: '10px',
-        color:'blue',
+        color:'black',
         width: 'calc(100% - 10px)',
         background:'transparent',
         borderRadius:'1rem',
         boxShadow: '0 0 5px black',
+        "&:focus":{
+            outline:'1px solid blue',
+        },
+        "@media(max-width:700px)":{
+            fontSize:'1.2rem'
+        },
+        "@media(max-width:500px)":{
+            fontSize:'1rem',
+            padding:'10px',
+            boxShadow:' 0 0 2px black'
+        }
     },
     textFieldStyle: {
         width: 'calc(100% - 10px)',
@@ -89,11 +121,22 @@ export default makeStyles(() => ({
         border: 'none',
         borderRadius:'1rem',
         boxShadow: '0 0 5px black',
-        color:'blue',
+        color:'black',
+        "&:focus":{
+            outline:'1px solid blue',
+        },
         background: 'transparent',
         '&::-webkit-scrollbar': {
             width: '0.4em',
             display: 'none',
+        },
+        "@media(max-width:700px)":{
+            fontSize:'1.1rem'
+        },
+        "@media(max-width:500px)":{
+            fontSize:'1rem',
+            padding:'10px',
+            boxShadow:' 0 0 2px black'
         }
     },
     fileUpload: {
@@ -107,6 +150,9 @@ export default makeStyles(() => ({
         color: 'green',
         textAlign: 'center',
         fontFamily: 'serif',
-        margin: '10px'
+        margin: '10px',
+        "@media(max-width:500px)":{
+            fontSize:'1rem'
+        }
     }
 }))

@@ -16,7 +16,17 @@ export default makeStyles(()=>({
         background:'linear-gradient(30deg,hotpink,blue)',
         zIndex:'9999',
         animation:`$floataway 2000ms infinite`,
-        transition:'animation 500ms ease-in-out'
+        transition:'animation 500ms ease-in-out',
+        "@media(max-width:700px)":{
+            height:'2.4rem',
+            width:'2.4rem',
+            fontSize:'1.2rem'
+        },
+        "@media(max-width:500px)":{
+            height:'1.8rem',
+            width:'1.8rem',
+            fontSize:"1rem"
+        }
     },
     "@keyframes floataway":{
         "0%,50%":{

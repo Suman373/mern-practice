@@ -22,7 +22,7 @@ const useStyles=makeStyles(()=>({
             fontSize:'1.2rem',
         },
         '@media(max-width:400px)':{
-            fontSize:'1.1rem',
+            fontSize:'1rem',
         }
     }
 }))

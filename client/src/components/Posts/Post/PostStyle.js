@@ -1,19 +1,29 @@
 // custom styling for all the post
 import { makeStyles } from "@material-ui/core";
-import Flowers from '../Post/postAssets/Flowers.jpeg';
 
 export default makeStyles(()=>({
     postContainer:{
-        height:'25rem',
+        minHeight:'25rem',
         width:'25rem',
-        // background:"linear-gradient(0deg, rgba(70,135,93,1) 17%, rgba(11,167,144,1) 100%)",
         margin:'1rem',
         padding:'1rem',
         borderRadius:'1rem',
         border:'none',
         boxShadow:'0 0 4px black',
         fontFamily:'IBM Plex Sans, sans-serif',
-        position:'relative'
+        position:'relative',
+        '@media(max-width:700px)':{
+            minHeight:'22rem',
+            width:'22rem',
+
+        },
+        '@media(max-width:500px)':{
+            minHeight:'22rem',
+            width:'20rem'
+        },
+        '@media(max-width:400px)':{
+            width:'18rem',
+        }
        
     }, 
     mediaCard:{
@@ -35,17 +45,34 @@ export default makeStyles(()=>({
     username:{
         fontSize:'1.4rem',
         fontWeight:'600',
-        color:'white'
+        color:'white',
+        '@media(max-width:700px)':{
+            fontSize:'1.3rem'
+        },
+        '@media(max-width:500px)':{
+            fontSize:'1.1rem'
+        }
     },
     postTitle:{
         fontSize:"1.2rem",
         color:'yellow',
         margin:'10px 0',
+        '@media(max-width:700px)':{
+            fontSize:'1rem'
+        },
+        '@media(max-width:500px)':{
+            fontSize:'0.9rem'
+        }
     },
     descriptionPara:{
-        fontSize:'1.2rem',
+        fontSize:'1.1rem',
         padding:'5px',
-        // color:'blue'
+        '@media(max-width:700px)':{
+            fontSize:'1rem'
+        },
+        '@media(max-width:500px)':{
+            fontSize:'0.8rem',
+        }
     },
     actionsContainer:{
         bottom:'0rem',
@@ -58,9 +85,34 @@ export default makeStyles(()=>({
         position:'absolute',
         justifyContent:'space-evenly',
         alignItems:'center',
-        fontSize:'1.2rem',
         gap:'1rem',
         borderRadius:'0 0 1rem 1rem',
+        "&>button":{
+            background:'transparent',
+            outline:'none',
+            border:'none',
+            cursor:'pointer',
+            fontSize:'1.2rem',
+            display:'flex',
+            alignItems:'center',
+            color:'white',
+            '@media(max-width:700px)':{
+                fontSize:'1.1rem'
+            },
+            '@media(max-width:500px)':{
+                fontSize:'1rem'
+            }
+        },
+    },
+    edit:{
+        fontSize:'1.2rem',
+        position:'absolute',
+        color:'orange',
+        background:'none',
+        border:'none',
+        cursor:'pointer',
+        top:'1.5rem',
+        right:'1rem'
     }
 
 }))

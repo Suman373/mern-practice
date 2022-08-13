@@ -14,13 +14,13 @@ export default makeStyles(()=>({
         fontSize:'2rem',
         color:'blue',
         textAlign:"center",
-        margin:'1rem',
+        margin:'0.5rem',
         fontFamily:'Lobster,cursive',
         '@media(max-width:700px)': {
             fontSize: '1.7rem',
         },
         '@media(max-width:400px)': {
-            fontSize: '1.2rem',
+            fontSize: '1.4rem',
         },
     }
 }));

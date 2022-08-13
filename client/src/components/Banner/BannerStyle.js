@@ -29,19 +29,12 @@ export default makeStyles(()=>({
         fontSize:'5rem',
         color:'blue',
         textShadow:'0 0 2px blue',
-        transition: 'animation 2000ms',
-        animation:"$changeColor 4000ms ease-in-out infinite",
         '@media(max-width:700px)':{
             fontSize:'3rem',
         },
         '@media(max-width:400px)':{
             fontSize:'2.4rem'
         }
-    },
-    "@keyframes changeColor":{
-        "30%":{color:'#661a66',textShadow:'0 0 2px #661a66 '},
-        "60%":{color:'#137949' , texShadow:'0 0 2px #137949'},
-        "90%":{color:'#c9ae19', textShadow:'0 0 2px #c9ae19'},
     },
     caption:{
         fontSize:'2.1rem',

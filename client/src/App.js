@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import './App.css'
-
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import Form from './components/Form/Form';
@@ -21,17 +20,18 @@ const App = () => {
     // dispatching actions 
     const dispatch = useDispatch();
 
-    // mount and re-renders
-    useEffect(() => {
-        dispatch(getPosts()); // successful dispatch
-    }, [dispatch]); // dispatch as dep arr,
+    // id for post
+    const [ currentId, setCurrentId] = useState(null);
 
+     // mount and re-renders
+     useEffect(() => {
+        dispatch(getPosts()); // successful dispatch
+    }, [currentId,dispatch]); // dispatch as dep arr,
 
 
     let position;
     window.addEventListener('scroll', () => {
         position = window.pageYOffset;
-        // console.log(position);
         position > 200 ? setShowScroll(true) : setShowScroll(false);
     })
 
@@ -51,16 +51,16 @@ const App = () => {
                     }>
                     </Route>
                     <Route path="/checkPosts" element={
-                        <>
-                            {showScroll ?
-                                <button
-                                    className={classes.scrollBtn}
-                                    onClick={() => scrollFunction()}>
-                                    <AiOutlineArrowUp></AiOutlineArrowUp>
-                                </button> : ""}
-                            <Form />
-                            <Posts />
-                        </>
+                         <>
+                         {showScroll ?
+                             <button
+                                 className={classes.scrollBtn}
+                                 onClick={() => scrollFunction()}>
+                                 <AiOutlineArrowUp></AiOutlineArrowUp>
+                             </button> : ""}
+                         <Form  currentId={currentId} setCurrentId={setCurrentId}/>
+                         <Posts setCurrentId={setCurrentId} />
+                     </>
                     }>
                     </Route>
                 </Routes>

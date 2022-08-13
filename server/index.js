@@ -3,8 +3,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 // import our post router
 const postRoutes = require('./routes/posts.js');
+const BASE_URL =  process.env.DB_CONNECTION_URL;
 
 // init express app
 const app = express(); 
@@ -19,10 +21,10 @@ app.use(cors());
 app.use('/posts', postRoutes);
 
 // db connection url
-const CONN_URL = "mongodb+srv://suman373:mongodbsuman373@cluster0.o3wpm.mongodb.net/?retryWrites=true&w=majority";
+// const CONN_URL = "mongodb+srv://suman373:mongodbsuman373@cluster0.o3wpm.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 // function to connect with db : 3params : url, obj (2options), returns a promise
-mongoose.connect(CONN_URL , { useNewUrlParser:true , useUnifiedTopology :true})
+mongoose.connect(BASE_URL, { useNewUrlParser:true , useUnifiedTopology :true})
     .then(()=> app.listen(PORT,()=> console.log(`Db connected Server succesfully running on port ${PORT}`)))// when conn is established
     .catch((error)=> console.log(`Error is ${error.message}`)) // error

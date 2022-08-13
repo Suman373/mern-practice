@@ -6,7 +6,7 @@ import useStyles from  './PostsStyle';
 import {LinearProgress} from '@material-ui/core';
 
 
-const Posts = ()=>{
+const Posts = ({setCurrentId})=>{
     // class for styling objects
     const classes = useStyles();
 
@@ -27,7 +27,9 @@ const Posts = ()=>{
         <Container className={classes.postsContainer}>
         {
             posts.map((post)=> (
-                <Post post={post}/>
+                <div key={post._id}>
+                    <Post setCurrentId={setCurrentId} post={post}/>
+                </div>
             ))
         }
         </Container>

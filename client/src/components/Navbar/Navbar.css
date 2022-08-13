@@ -65,7 +65,8 @@
     position:absolute;
     margin-top: 15rem;
     justify-content: center;
-    height:52rem;
+    height:80rem;
+    overflow-y: hidden;
     font-size: 1.3rem;
     width:15rem;
     right:0;
