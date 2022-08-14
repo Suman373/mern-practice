@@ -21,6 +21,9 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.get('/', (req,res)=> res.send("Welcome to the api"));
 
+
+
+
 const PORT = process.env.PORT || 5000;
 
 // function to connect with db : 3params : url, obj (2options), returns a promise
