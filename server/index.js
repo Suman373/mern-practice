@@ -19,9 +19,8 @@ app.use(bodyParser.urlencoded({limit:'30mb',extended:true}));
 app.use(cors());
 // route to the posts
 app.use('/posts', postRoutes);
+app.get('/', (req,res)=> res.send("Welcome to the api"));
 
-// db connection url
-// const CONN_URL = "mongodb+srv://suman373:mongodbsuman373@cluster0.o3wpm.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 // function to connect with db : 3params : url, obj (2options), returns a promise
