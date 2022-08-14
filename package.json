@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Server for memories application",
+  "description": "Server for souvenir application",
   "main": "index.js",
   "scripts": {
     "start": "node index.js ",
