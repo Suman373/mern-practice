@@ -7,6 +7,7 @@ require('dotenv').config();
 // import our post router
 const postRoutes = require('./routes/posts.js');
 const BASE_URL =  process.env.DB_CONNECTION_URL;
+const path = require('path');
 
 // init express app
 const app = express(); 
@@ -22,6 +23,11 @@ app.use('/posts', postRoutes);
 app.get('/', (req,res)=> res.send("Welcome to the api"));
 
 
+// other middlewares
+app.use(express.static(path.join(__dirname, "client" , "build")));
+app.get("*", (req,res)=>{
+    res.sendFile(path.join(__dirname, "client","build","index.html"));
+})
 
 
 const PORT = process.env.PORT || 5000;
