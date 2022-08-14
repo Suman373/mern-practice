@@ -23,7 +23,6 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.get('/', (req, res) => res.send("Welcome to the api"));
 
-console.log(BASE_URL);//
 
 // other middlewares
 if (process.env.NODE_ENV === "production") {
