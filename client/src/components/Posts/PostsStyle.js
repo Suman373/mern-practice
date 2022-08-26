@@ -12,7 +12,7 @@ export default makeStyles(()=>({
     },
     titleStyle:{
         fontSize:'2rem',
-        color:'blue',
+        color:'black',
         textAlign:"center",
         margin:'0.5rem',
         fontFamily:'Lobster,cursive',

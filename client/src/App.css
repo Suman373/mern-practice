@@ -14,7 +14,7 @@ font-family: 'Lobster', cursive; headings */
     --sea-green:#137949;
     --brownish : #572f2f;
     --golden:#c9ae19;
-    --white:#f0eeee;
+    --white:#fffffe;
     --violet:#661a66;
     --gradient1:linear-gradient(30deg,hotpink,blue);
     --glass:#20202027;
@@ -29,6 +29,23 @@ body{
     width:100vw;
     /* background:#f8f6f6; */
     background:var(--white);
+    /* background:#252424; */
     overflow-x: hidden;
    position: relative;
+}
+
+#banner-text-clip{
+    background: url('./components/Banner/assets/textBgImage.jpg');
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition:animation 1000ms;
+    animation:sexymoves 8000ms infinite alternate;
+}
+@keyframes sexymoves{
+    0%{
+        background-position: 50% 20%;
+    }
+    100%{
+        background-position: 100% 40%;
+    }
 }

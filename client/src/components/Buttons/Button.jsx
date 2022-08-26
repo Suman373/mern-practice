@@ -4,13 +4,15 @@ import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles=makeStyles(()=>({
     btnStyle:{
-        fontSize:'1.3rem',
+        fontSize:'1.1rem',
         width:'fit-content',
         padding:'8px 0.8rem',
         background:'linear-gradient(30deg,hotpink,blue)',
+        background:'blue',
         color:'white',
         margin:'0.5rem',
         border:'none',
+        fontFamily:'sans-serif',
         borderRadius:'18px',
         cursor:'pointer',
         '&:hover':{

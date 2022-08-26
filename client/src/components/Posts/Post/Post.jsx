@@ -31,10 +31,11 @@ const Post=({post, setCurrentId})=>{
     return(
         <Container className={classes.postContainer}>
            
-            <CardMedia
+            {/* <CardMedia
              className={classes.mediaCard} 
              image={post.selectedFile}
-             title={post.title} />
+             title={post.title} /> */}
+             <img className={classes.mediaCard} src={post.selectedFile}/>
             
            <div className={classes.infoContainer}>
            <Typography className={classes.username}>
@@ -70,7 +71,7 @@ const Post=({post, setCurrentId})=>{
                 <button 
                 onClick={(e)=> handleLike(e)}>
                     <AiFillHeart style={post.likeCount>0 ? {color:'red'} : ''}/>
-                    <p style={{fontSize:'1rem', margin:'4px'}}>{post.likeCount} likes</p>
+                    <p style={{fontSize:'1rem', margin:'4px'}}>{post.likeCount} {post.likeCount > 1 ? 'likes' : 'like'}</p>
                 </button>
                 <button>
                     <BiComment style={{color:'blue'}} />

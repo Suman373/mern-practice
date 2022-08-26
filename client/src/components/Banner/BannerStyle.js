@@ -5,7 +5,7 @@ export default makeStyles(()=>({
     imageContainer:{
         width:'calc(100% - 1rem)',
         position:'relative',
-        height:'85vh',
+        height:'80vh',
         display:'grid',
         placeContent:'center',
         textAlign:"center",
@@ -26,9 +26,11 @@ export default makeStyles(()=>({
       }
     },
     bannerTitle:{
-        fontSize:'5rem',
-        color:'blue',
-        textShadow:'0 0 2px blue',
+        fontSize:'5.2rem',
+        fontFamily:'serif',
+        fontWeight:'900',
+        height:'fit-content',
+        width:'100%',
         '@media(max-width:700px)':{
             fontSize:'3rem',
         },
@@ -37,9 +39,10 @@ export default makeStyles(()=>({
         }
     },
     caption:{
-        fontSize:'2.1rem',
-        margin:'1rem',
-        color:'blue',
+        fontSize:'1.8rem',
+        margin:'1rem 20rem',
+        textAlign:'center',
+        color:'black',
         '@media(max-width:700px)':{
             fontSize:'1.8rem',
         },

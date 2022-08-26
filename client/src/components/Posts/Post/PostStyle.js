@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles(()=>({
     postContainer:{
-        minHeight:'25rem',
-        width:'25rem',
+        height:'40rem',
+        width:'40rem',
         margin:'1rem',
         padding:'1rem',
         borderRadius:'1rem',
@@ -27,25 +27,19 @@ export default makeStyles(()=>({
        
     }, 
     mediaCard:{
-        height:'100%',
+        maxHeight:'20rem',
         width:'100%',
-        position:'absolute',
-        zIndex:'-2',
+        position:'relative',
         opacity:'1',
-        top:'0',
-        left:'0',
         borderRadius:'1rem',
     },
     infoContainer:{
-        background:'#20202030',
-        padding:'0.9rem',
-        borderRadius:'1rem',
-        color:'white',
+        padding:'1rem',
     },
     username:{
         fontSize:'1.4rem',
         fontWeight:'600',
-        color:'white',
+        color:'blue',
         '@media(max-width:700px)':{
             fontSize:'1.3rem'
         },
@@ -55,7 +49,7 @@ export default makeStyles(()=>({
     },
     postTitle:{
         fontSize:"1.2rem",
-        color:'yellow',
+        color:'green',
         margin:'10px 0',
         '@media(max-width:700px)':{
             fontSize:'1rem'
@@ -105,14 +99,14 @@ export default makeStyles(()=>({
         },
     },
     edit:{
-        fontSize:'1.2rem',
+        fontSize:'1.5rem',
         position:'absolute',
         color:'orange',
         background:'none',
         border:'none',
         cursor:'pointer',
         top:'1.5rem',
-        right:'1rem'
+        right:'1.5rem'
     }
 
 }))

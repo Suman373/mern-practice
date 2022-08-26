@@ -19,14 +19,18 @@ const Banner = () =>{
     return(
         <div id="home" className={classes.imageContainer}>
             <Container>
-            <h1 className={classes.bannerTitle}><span style={{color:'blue'}}>Welcome to </span> Souvenir </h1>
-            <Typography className={classes.caption}>The best place to share <span style={{color:'blue'}}>happy moments</span></Typography>
+            <div className={classes.bannerTitle}
+             id="banner-text-clip">
+                Say yes to Plogify
+             </div>
+            <Typography className={classes.caption}>
+                The easiest way to get started with plogs and let everyone see your passion for plogs
+            </Typography>
             <Button
             onClick={(e)=>checkPosts(e)}
             text={'Explore'}
           />
             </Container>
-            <img className={classes.image} src={happypic} alt="banner-picture"/>
         </div>
     )
 }

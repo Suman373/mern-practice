@@ -31,7 +31,7 @@ const Navbar=()=>{
             className={classes.title}
             variant='h2'
             align="left">
-                Souvenir
+                Plogify
             </Typography>
 
             <div  className={!hamburgerOpen ? "menuContainer" : "menuContainer open"}>

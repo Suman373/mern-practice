@@ -80,7 +80,7 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
         <>
             <Container className={classes.wrapper}>
-                <h2 className={classes.headingStyle}>Share your moments, let others know </h2>
+                <h2 className={classes.headingStyle}>Let others know about your posts </h2>
                 {postForm ? //form open
                     <Container
                         className={classes.formContainer}>

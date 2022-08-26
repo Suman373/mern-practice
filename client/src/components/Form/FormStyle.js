@@ -11,9 +11,10 @@ export default makeStyles(() => ({
         }
     },
     headingStyle: {
-        fontSize: '2.6rem',
-        color: 'blue',
-        marginBottom: '1rem',
+        fontSize: '2.4rem',
+        fontFamily:'sans-serif',
+        color: 'black',
+        marginBottom: '1.2rem',
         '@media(max-width:700px)': {
             fontSize: '2.1rem',
         },
@@ -61,7 +62,7 @@ export default makeStyles(() => ({
         border: 'none',
         cursor: 'pointer',
         background: 'transparent',
-        color: 'red',
+        color: '#e00d2d',
         '@media(max-width:700px)': {
             fontSize: '1.5rem',
         },
@@ -76,11 +77,11 @@ export default makeStyles(() => ({
         gap:'1rem',
     },
     createPostTitle: {
-        fontSize: '1.8rem',
-        fontFamily: 'serif',
+        fontSize: '1.6rem',
+        fontFamily: 'sans-serif',
         margin: '1rem',
         fontWeight:'600',
-        color: "blue",
+        color: "black",
         '@media(max-width:700px)': {
             fontSize: '1.5rem',
         },
@@ -114,6 +115,7 @@ export default makeStyles(() => ({
         width: 'calc(100% - 10px)',
         height: '10rem',
         outline: 'none',
+        fontWeight:'600',
         fontSize: "1.2rem",
         padding: '10px',
         fontFamily: 'IBM Plex Sans, sans-serif',
