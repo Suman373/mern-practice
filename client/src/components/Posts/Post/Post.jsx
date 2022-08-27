@@ -30,11 +30,6 @@ const Post=({post, setCurrentId})=>{
 
     return(
         <Container className={classes.postContainer}>
-           
-            {/* <CardMedia
-             className={classes.mediaCard} 
-             image={post.selectedFile}
-             title={post.title} /> */}
              <img className={classes.mediaCard} src={post.selectedFile}/>
             
            <div className={classes.infoContainer}>

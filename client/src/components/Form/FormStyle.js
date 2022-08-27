@@ -83,10 +83,10 @@ export default makeStyles(() => ({
         fontWeight:'600',
         color: "black",
         '@media(max-width:700px)': {
-            fontSize: '1.5rem',
+            fontSize: '1.3rem',
         },
         '@media(max-width:400px)': {
-            fontSize: '1.3rem',
+            fontSize: '1.1rem',
         },
     },
     creator_title_tag_style: {

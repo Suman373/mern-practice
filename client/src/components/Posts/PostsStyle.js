@@ -15,13 +15,13 @@ export default makeStyles(()=>({
         fontSize:'2rem',
         color:'black',
         textAlign:"center",
-        margin:'0.5rem',
-        fontFamily:'Lobster,cursive',
+        marginTop:'-3rem',
+        padding:'1rem',
         '@media(max-width:700px)': {
-            fontSize: '1.5rem',
+            fontSize: '1.3rem',
         },
-        '@media(max-width:400px)': {
-            fontSize: '1.2rem',
+        '@media(max-width:500px)': {
+            fontSize: '1rem',
         },
     }
 }));

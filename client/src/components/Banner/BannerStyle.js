@@ -39,15 +39,18 @@ export default makeStyles(()=>({
         }
     },
     caption:{
-        fontSize:'1.8rem',
-        margin:'1rem 20rem',
+        fontSize:'1.5rem',
+        margin:'1rem 18rem',
         textAlign:'center',
         color:'black',
-        '@media(max-width:700px)':{
-            fontSize:'1.8rem',
+        fontWeight:'700',
+        '@media(max-width:900px)':{
+            fontSize:'1.2rem',
+            margin:'1rem'
         },
         '@media(max-width:400px)':{
-            fontSize:'1.3rem',
+            fontSize:'1rem',
+            margin:'1rem'
         },
     }
 }))

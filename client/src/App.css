@@ -34,18 +34,4 @@ body{
    position: relative;
 }
 
-#banner-text-clip{
-    background: url('./components/Banner/assets/textBgImage.jpg');
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    transition:animation 1000ms;
-    animation:sexymoves 8000ms infinite alternate;
-}
-@keyframes sexymoves{
-    0%{
-        background-position: 50% 20%;
-    }
-    100%{
-        background-position: 100% 40%;
-    }
-}
+

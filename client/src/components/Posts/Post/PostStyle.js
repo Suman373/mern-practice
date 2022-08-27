@@ -13,8 +13,8 @@ export default makeStyles(()=>({
         fontFamily:'IBM Plex Sans, sans-serif',
         position:'relative',
         '@media(max-width:700px)':{
-            height:'22rem',
-            width:'22rem',
+            height:'35rem',
+            width:'30rem',
 
         },
         '@media(max-width:500px)':{

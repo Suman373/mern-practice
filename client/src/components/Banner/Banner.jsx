@@ -1,6 +1,7 @@
 import React from "react";
 import {Container,Typography} from '@material-ui/core';
 import useStyles from './BannerStyle';
+import './Banner.css';
 import Button from '../Buttons/Button';
 import  {useNavigate} from 'react-router-dom';
 import happypic from './assets/happypic.png';
