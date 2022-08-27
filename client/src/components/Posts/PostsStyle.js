@@ -12,7 +12,8 @@ export default makeStyles(()=>({
         overflow:'hidden',
         '@media(max-width:700px)': {
             fontSize: '1.3rem',
-            flexDirection:'column'
+            flexDirection:'column',
+            justifyContent:'flex-start'
         },
         '@media(max-width:500px)': {
             fontSize: '1rem',
