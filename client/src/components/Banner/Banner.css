@@ -1,15 +1,18 @@
 #banner-text-clip{
-    background: url('./assets/textBgImage.jpg') no-repeat;
+    background: url('./assets/bluee.jpeg') no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    text-align: center;
+    filter: drop-shadow(0 0 1px black);
+    background-size: 150% 150%;
     transition:animation 1000ms;
-    animation:sexymoves 8000ms infinite alternate;
+    animation:sexymoves 6000ms infinite alternate;
 }
 @keyframes sexymoves{
     0%{
-        background-position: 50% 20%;
+        background-position: 50% 100%;
     }
     100%{
-        background-position: 100% 40%;
+        background-position: 100% 0%;
     }
 }

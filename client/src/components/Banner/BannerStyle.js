@@ -2,10 +2,16 @@ import {makeStyles} from '@material-ui/core/styles';
 
 
 export default makeStyles(()=>({
+    blob1:{
+        position:'absolute',
+        left:'0',
+        zIndex:'-1',
+
+    },
     imageContainer:{
         width:'calc(100% - 1rem)',
         position:'relative',
-        height:'80vh',
+        height:'82vh',
         display:'grid',
         placeContent:'center',
         textAlign:"center",
