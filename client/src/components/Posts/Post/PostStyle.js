@@ -13,16 +13,17 @@ export default makeStyles(()=>({
         fontFamily:'IBM Plex Sans, sans-serif',
         position:'relative',
         '@media(max-width:700px)':{
-            minHeight:'22rem',
+            height:'22rem',
             width:'22rem',
 
         },
         '@media(max-width:500px)':{
-            minHeight:'22rem',
-            width:'20rem'
+            height:'30rem',
+            width:'22rem',
         },
         '@media(max-width:400px)':{
-            width:'18rem',
+            height:'30rem',
+            width:'20rem',
         }
        
     }, 

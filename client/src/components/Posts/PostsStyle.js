@@ -9,6 +9,7 @@ export default makeStyles(()=>({
         justifyContent:'center',
         alignItems:'center',
         flexWrap:'wrap',
+        overflowX:'hidden'
     },
     titleStyle:{
         fontSize:'2rem',
@@ -17,10 +18,10 @@ export default makeStyles(()=>({
         margin:'0.5rem',
         fontFamily:'Lobster,cursive',
         '@media(max-width:700px)': {
-            fontSize: '1.7rem',
+            fontSize: '1.5rem',
         },
         '@media(max-width:400px)': {
-            fontSize: '1.4rem',
+            fontSize: '1.2rem',
         },
     }
 }));

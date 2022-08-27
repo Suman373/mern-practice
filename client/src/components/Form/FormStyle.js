@@ -16,10 +16,10 @@ export default makeStyles(() => ({
         color: 'black',
         marginBottom: '1.2rem',
         '@media(max-width:700px)': {
-            fontSize: '2.1rem',
+            fontSize: '1.8rem',
         },
-        '@media(max-width:400px)': {
-            fontSize: '1.6rem',
+        '@media(max-width:500px)': {
+            fontSize: '1.2rem',
         },
     },
     formContainer: {

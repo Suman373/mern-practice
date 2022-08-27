@@ -79,7 +79,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
     return (
         <>
-            <Container className={classes.wrapper}>
+            <main className={classes.wrapper}>
                 <h2 className={classes.headingStyle}>Let others know about your posts </h2>
                 {postForm ? //form open
                     <Container
@@ -163,7 +163,7 @@ const Form = ({ currentId, setCurrentId }) => {
                         {postUploaded ? <Typography className={classes.formClearedMessage}>Successfully uploaded ✅</Typography> : ''}
                     </>
                 }
-            </Container>
+            </main>
         </>
     );
 }
