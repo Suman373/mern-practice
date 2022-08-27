@@ -9,7 +9,15 @@ export default makeStyles(()=>({
         justifyContent:'center',
         alignItems:'center',
         flexWrap:'wrap',
-        overflowX:'hidden'
+        overflow:'hidden',
+        '@media(max-width:700px)': {
+            fontSize: '1.3rem',
+            flexDirection:'column'
+        },
+        '@media(max-width:500px)': {
+            fontSize: '1rem',
+        },
+
     },
     titleStyle:{
         fontSize:'2rem',

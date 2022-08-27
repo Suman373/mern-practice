@@ -24,7 +24,7 @@ const Posts = ({setCurrentId})=>{
         </Typography>
         {!posts.length ? <LinearProgress/>
         :
-        <Container className={classes.postsContainer}>
+        <section className={classes.postsContainer}>
         {
             posts.map((post)=> (
                 <div key={post._id}>
@@ -32,7 +32,7 @@ const Posts = ({setCurrentId})=>{
                 </div>
             ))
         }
-        </Container>
+        </section>
         }
        </>
     )

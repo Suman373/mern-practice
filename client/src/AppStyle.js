@@ -13,18 +13,18 @@ export default makeStyles(()=>({
         bottom:'1rem',
         border:'none',
         cursor:'pointer',
-        background:'linear-gradient(30deg,hotpink,blue)',
+        background:'blue',
         zIndex:'9999',
         animation:`$floataway 2000ms infinite`,
         transition:'animation 500ms ease-in-out',
         "@media(max-width:700px)":{
-            height:'2.4rem',
-            width:'2.4rem',
+            height:'2.5rem',
+            width:'2.5rem',
             fontSize:'1.2rem'
         },
         "@media(max-width:500px)":{
-            height:'1.8rem',
-            width:'1.8rem',
+            height:'2.2rem',
+            width:'2.2rem',
             fontSize:"1rem"
         }
     },

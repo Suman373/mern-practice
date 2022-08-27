@@ -19,11 +19,11 @@ export default makeStyles(()=>({
         },
         '@media(max-width:500px)':{
             height:'30rem',
-            width:'22rem',
+            width:'24rem',
         },
         '@media(max-width:400px)':{
             height:'30rem',
-            width:'20rem',
+            width:'22rem',
         }
        
     }, 
