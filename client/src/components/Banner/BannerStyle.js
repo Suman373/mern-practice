@@ -48,7 +48,7 @@ export default makeStyles(()=>({
         fontSize:'1.5rem',
         margin:'1rem 18rem',
         textAlign:'center',
-        color:'black',
+        color:'#ff258b',
         fontWeight:'700',
         '@media(max-width:900px)':{
             fontSize:'1.2rem',

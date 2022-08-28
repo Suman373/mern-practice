@@ -8,6 +8,7 @@ import Posts from './components/Posts/Posts.jsx';
 import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/Banner/Banner';
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 import { getPosts } from './actions/posts';
 import useStyles from './AppStyle';
 import { AiOutlineArrowUp } from 'react-icons/ai';
@@ -66,6 +67,7 @@ const App = () => {
                 </Routes>
             </div>
             <Routes>
+                <Route path="/about" element={<About/>}></Route>
                 <Route exact path="/contact" element={<Contact />}></Route>
             </Routes>
         </BRouter >

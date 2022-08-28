@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 export default makeStyles(()=>({
     postContainer:{
         height:'40rem',
-        width:'40rem',
+        width:'35rem',
         margin:'1rem',
         padding:'1rem',
         borderRadius:'1rem',
@@ -18,11 +18,11 @@ export default makeStyles(()=>({
 
         },
         '@media(max-width:500px)':{
-            height:'30rem',
+            minHeight:'30rem',
             width:'24rem',
         },
         '@media(max-width:400px)':{
-            height:'30rem',
+            minHeight:'30rem',
             width:'22rem',
         }
        
@@ -33,6 +33,10 @@ export default makeStyles(()=>({
         position:'relative',
         opacity:'1',
         borderRadius:'1rem',
+        border:'1px solid black',
+        "@media(max-width:500px)":{
+            height:'15rem',
+        }
     },
     infoContainer:{
         padding:'1rem',

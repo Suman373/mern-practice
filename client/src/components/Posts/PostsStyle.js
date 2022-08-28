@@ -22,7 +22,8 @@ export default makeStyles(()=>({
     },
     titleStyle:{
         fontSize:'2rem',
-        color:'black',
+        color:'#ff258b',
+        textShadow:'0 0 1px black',
         textAlign:"center",
         marginTop:'-3rem',
         padding:'1rem',

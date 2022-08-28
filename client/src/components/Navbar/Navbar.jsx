@@ -38,7 +38,7 @@ const Navbar=()=>{
          
                 <Link to={'/#home'}>Home</Link>
                 <Link to={'/checkPosts'}>Posts</Link>
-                <Link to={'#'}>About</Link>
+                <Link to={'/about'}>About</Link>
                 <Link to={'/contact'}>Contact Us</Link>
                 
                 {/* sign in / login*/}

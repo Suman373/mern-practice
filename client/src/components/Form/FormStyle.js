@@ -13,7 +13,8 @@ export default makeStyles(() => ({
     headingStyle: {
         fontSize: '2.4rem',
         fontFamily:'sans-serif',
-        color: 'black',
+        color:'#ff258b',
+        textShadow:'0 0 1px black',
         marginBottom: '1.2rem',
         '@media(max-width:700px)': {
             fontSize: '1.8rem',
