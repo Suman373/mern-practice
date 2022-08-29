@@ -15,18 +15,18 @@ export default makeStyles(()=>({
         fontFamily:'IBM Plex Sans,serif',
     },
     leftAbstract:{
-        height:'100vh',
-        position:'absolute',
-        left:'-25%',
-        bottom:'30%',
+        height:'40rem',
+        width:'40rem',
+        position:'fixed',
+        left:'-20%',
+        top:'-10%',
         borderRadius:'50%',
         zIndex:'-1',
         transform:'rotate(40deg)',
-        width:'40rem',
         background:"#fc53b3",
         "@media(max-width:1200px)":{
             height:'30rem',
-            width:'20rem',
+            width:'30rem',
             left:"-10%",
             bottom:'20%'
         },
@@ -37,32 +37,38 @@ export default makeStyles(()=>({
             opacity:'0.7',
             bottom:'20%'
         },
+        "@media(max-width:550px)":{
+            display:'none'
+        }
 
     },
     rightAbstract:{
-        height:'100vh',
+        height:'40rem',
         width:'40rem',
         borderRadius:'',
-        top:'30%',
+        bottom:'-10%',
         right:'-20%',
         borderRadius:'50%',
-        position:'absolute',
+        position:'fixed',
         transform:'rotate(-45deg)',
         background:'#3db3f2',
         zIndex:"-1",
         "@media(max-width:1200px)":{
             height:'30rem',
-            width:'25rem',
+            width:'30rem',
             right:'-10%',
             top:'40%',
         },
         "@media(max-width:700px)":{
             height:'25rem',
             width:'25rem',
-            right:"-10%",
+            right:"0%",
             top:'50%',
             opacity:'0.7'
         },
+        "@media(max-width:500px)":{
+            display:'none'
+        }
     },
     bannerTitle:{
         fontSize:'5rem',
