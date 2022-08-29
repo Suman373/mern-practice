@@ -11,29 +11,33 @@ export default makeStyles(()=>({
     },
     formWrapper:{
         textAlign:'center',
-        fontSize:'1.8rem',
         padding:'1rem',
         color:'#ff258b',
         textShadow:'0 0 1px black',
+    },
+    formTitle:{
+        fontSize:'2.7rem',
+        margin:'1rem',
         "@media(max-width:700px)":{
-            fontSize:"1.4rem"
+            fontSize:"2.2rem"
         },
         "@media(max-width:500px)":{
-            fontSize:'1.2rem',
+            fontSize:'1.8rem',
         }
     },
     imgContainer:{
         height:'80vh',
         width:'40rem',
         position:'relative',
-        // margin:'2rem',
+        display:'grid',
+        placeContent:'center',
         "@media(max-width:800px)":{
             display:'none',
         }
     },
     formImage:{
-        height:'100%',
-        width:'100%'
+        height:'30rem',
+        width:'35rem'
     }
     
 }))

@@ -22,7 +22,7 @@ const Contact = ()=>{
                 <img className={classes.formImage} src={Image} alt="cartoon picture of form"/>
             </div>
           <section className={classes.formWrapper}>
-            <h1>Help us become better</h1>
+            <h1 className={classes.formTitle}>Help us become better</h1>
           <form className="contact-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">
                     Name
