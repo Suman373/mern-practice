@@ -13,8 +13,33 @@ export default makeStyles(()=>({
         margin:'1rem auto',
         padding:'1rem',
         lineHeight:'2',
-        fontSize:'1.3rem',
         color:'#ff258b',
         textShadow:'0 0 1px black',
+        "@media(max-width:700px)":{
+            width:'20rem'
+        },
+        "@media(max-width:450px)":{
+            width:'fit-content',
+        }
     },
+    heading:{
+        fontSize:"2rem",
+        "@media(max-width:700px)":{
+            fontSize:"1.7rem"
+        },
+        "@media(max-width:400px)":{
+            fontSize:"1.5rem"
+        },
+    },
+    para:{
+        fontSize:"1.3rem",
+        textAlign:"center",
+        margin:"10px 0",
+        "@media(max-width:700px)":{
+            fontSize:"1.2rem"
+        },
+        "@media(max-width:400px)":{
+            fontSize:"1.1rem"
+        },
+    }
 }))
