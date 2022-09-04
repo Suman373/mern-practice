@@ -2,12 +2,12 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles(()=>({
     wrapper:{
-        height:'85vh',
+        height:'76vh',
         width:'100vw',
         display:'flex',
         justifyContent:'space-evenly',
         alignItems:'center',
-        overflowX:'hidden',
+        overflow:'hidden',
     },
     formWrapper:{
         textAlign:'center',
@@ -22,7 +22,7 @@ export default makeStyles(()=>({
             fontSize:"2.2rem"
         },
         "@media(max-width:500px)":{
-            fontSize:'1.8rem',
+            fontSize:'1.5rem',
         }
     },
     imgContainer:{

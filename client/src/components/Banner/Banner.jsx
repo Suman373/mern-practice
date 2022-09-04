@@ -30,10 +30,10 @@ const Banner = () => {
                 <Container>
                     <div className={classes.bannerTitle}
                         id="banner-text-clip">
-                        Share the good things in life
+                        You don't take a photograph, you make it
                     </div>
                     <Typography className={classes.caption}>
-                        The easiest way to get started with plogs and let everyone see your passion for plogs
+                        Sharing your plogs is about to get better
                     </Typography>
                     <Button
                         onClick={(e) => checkPosts(e)}

@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles(()=>({
     aboutWrapper:{
-        height:'100vh',
+        maxHeight:'100vh',
         width:'100vw',
-        overflowX:'hidden',
+        overflow:'hidden',
     },
     aboutInfo:{
         height:'fit-content',
@@ -23,23 +23,23 @@ export default makeStyles(()=>({
         }
     },
     heading:{
-        fontSize:"2rem",
+        fontSize:"2.6rem",
         "@media(max-width:700px)":{
-            fontSize:"1.7rem"
+            fontSize:"2rem"
         },
         "@media(max-width:400px)":{
             fontSize:"1.5rem"
         },
     },
     para:{
-        fontSize:"1.3rem",
+        fontSize:"1.5rem",
         textAlign:"center",
         margin:"10px 0",
         "@media(max-width:700px)":{
-            fontSize:"1.2rem"
+            fontSize:"1.3rem"
         },
         "@media(max-width:400px)":{
-            fontSize:"1.1rem"
+            fontSize:"1.2rem"
         },
     }
 }))

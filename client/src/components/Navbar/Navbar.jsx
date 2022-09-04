@@ -42,7 +42,7 @@ const Navbar=()=>{
                 <Link to={'/contact'}>Contact Us</Link>
                 
                 {/* sign in / login*/}
-                <Link to={'/login'}>
+                <Link to={'/'}>
                     <Button
                      text={'Sign in'}/>
                 </Link>

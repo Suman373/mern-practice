@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import useStyles from './ContactStyle';
 import './Contact.css';
 import Image from '../assets/form-image.jpg';
+import Footer from "../components/Footer/Footer";
 
 const Contact = ()=>{
     // style objs
@@ -17,7 +18,8 @@ const Contact = ()=>{
     }
     
     return(
-        <div className={classes.wrapper}>
+        <>
+            <div className={classes.wrapper}>
             <div className={classes.imgContainer}>
                 <img className={classes.formImage} src={Image} alt="cartoon picture of form"/>
             </div>
@@ -48,6 +50,8 @@ const Contact = ()=>{
             </form>
           </section>
         </div>
+        <Footer/>
+        </>
     )
 }
 

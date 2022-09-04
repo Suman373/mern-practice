@@ -1,7 +1,7 @@
 // constants
 import { FETCH_ALL, CREATE , UPDATE , DELETE, LIKE_POST} from '../constants/actionTypes';
 
-// reducer -> function that accepts state and an action, based on action type it does some ops, switch
+// reducer -> function that accepts state and an action, based on action type it does some ops
 const reducer = (posts = [],action)=>{
     switch(action.type){
         case FETCH_ALL:

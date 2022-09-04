@@ -16,6 +16,7 @@ font-family: 'Lobster', cursive; headings */
     --golden:#c9ae19;
     --white:#fffffe;
     --violet:#661a66;
+    --pink:#ff258b;
     --gradient1:linear-gradient(30deg,hotpink,blue);
     --glass:#20202027;
 }
@@ -27,11 +28,9 @@ html{
 body{
     min-height:100vh;
     width:100vw;
-    /* background:#f8f6f6; */
     background:var(--white);
-    /* background:#252424; */
     overflow-x: hidden;
-   position: relative;
+    position: relative;
 }
 
 
