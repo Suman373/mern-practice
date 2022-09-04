@@ -8,7 +8,7 @@ export default makeStyles(()=>({
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
-        flexWrap:'wrap',
+        flexWrap:'wrap-reverse',
         flexDirection:'row-reverse',
         overflow:'hidden',
         '@media(max-width:700px)': {

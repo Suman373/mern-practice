@@ -62,9 +62,12 @@ const Form = ({ currentId, setCurrentId }) => {
     // handling add button
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // id check
-        // if current id is valid
+        // handle no inputs
+        if(!postData.creator || !postData.title || !postData.tags || !postData.description || !postData.selectedFile){
+            setPostForm(!postForm);    
+            return;
+        }
+        // id check if current id is valid
         if (currentId) {
             dispatch(updatePost(currentId, postData));
         }
@@ -75,7 +78,6 @@ const Form = ({ currentId, setCurrentId }) => {
         setTimeout(() => setPostUploaded(false), 4000);
         handleClear();
     }
-
 
     return (
         <>
@@ -95,7 +97,7 @@ const Form = ({ currentId, setCurrentId }) => {
                             Create a new post
                         </Typography>
 
-                        <form autoComplete="off" className={classes.formControl}>
+                        <form className={classes.formControl}>
                             <input
                                 required
                                 type="text"
@@ -147,7 +149,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
                             <Button text={'Post'} onClick={(e) => handleSubmit(e)} style={{ margin: '1rem' }} />
-                            <Button text={'Clear'} onClick={(e) => handleClear(e)} style={{ margin: '1rem' }} />
+                            <Button text={'Clear'} onClick={(e) => handleClear(e)} style={{ margin: '1rem', background:'transparent',border:"1px solid blue", color:'blue'}} />
                         </div>
 
 
