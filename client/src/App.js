@@ -7,6 +7,7 @@ import Form from './components/Form/Form';
 import Posts from './components/Posts/Posts.jsx';
 import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/Banner/Banner';
+import HomeInfo from "./components/HomeInfo/HomeInfo";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { getPosts } from './actions/posts';
@@ -27,7 +28,7 @@ const App = () => {
      // mount and re-renders
      useEffect(() => {
         dispatch(getPosts()); // successful dispatch
-    }, [currentId,dispatch]); // dispatch as dep arr,
+    }, [currentId,dispatch]); 
 
 
     let position;
@@ -48,7 +49,10 @@ const App = () => {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={
+                        <>
                         <Banner />
+                        <HomeInfo/>
+                        </>
                     }>
                     </Route>
                     <Route path="/checkPosts" element={

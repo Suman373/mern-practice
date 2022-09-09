@@ -2,7 +2,6 @@ import {makeStyles} from '@material-ui/core/styles';
 
 
 export default makeStyles(()=>({
-
     imageContainer:{
         width:'100%',
         position:'relative',
@@ -45,7 +44,6 @@ export default makeStyles(()=>({
     rightAbstract:{
         height:'40rem',
         width:'40rem',
-        borderRadius:'',
         bottom:'-10%',
         right:'-20%',
         borderRadius:'50%',
