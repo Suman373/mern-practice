@@ -3,10 +3,11 @@
     height: 4rem;
     display: flex;
     align-items: center;
-    box-shadow: 'none';
-    margin: 1rem auto;
-    background: transparent;
+    margin: 0 auto;
+    background:var(--light-grey);
+    box-shadow:  0 0 5px #1f1d1d;
     position: relative;
+    z-index: 999;
 }
 
 .menuContainer {
@@ -17,7 +18,7 @@
     justify-content: flex-end;
     font-size: 1.2rem;
     margin: 0.8rem;
-    z-index: 999;
+
     font-family: sans-serif;
 }
 

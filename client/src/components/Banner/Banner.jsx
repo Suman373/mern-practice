@@ -3,6 +3,7 @@ import { Container, Typography } from '@material-ui/core';
 import useStyles from './BannerStyle';
 import './Banner.css';
 import Button from '../Buttons/Button';
+import banner from '../../assets/bigbanner.png';
 import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
@@ -25,8 +26,6 @@ const Banner = () => {
     return (
         <>
             <div id="home" className={classes.imageContainer}>
-                <div className={classes.leftAbstract}></div>
-                <div className={classes.rightAbstract}></div>
                 <Container>
                     <div className={classes.bannerTitle}
                         id="banner-text-clip">
@@ -49,6 +48,7 @@ const Banner = () => {
                         text={'Get in touch'}
                     />
                 </Container>
+                
             </div>
         </>
     )

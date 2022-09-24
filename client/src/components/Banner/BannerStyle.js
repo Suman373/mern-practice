@@ -1,71 +1,24 @@
 import {makeStyles} from '@material-ui/core/styles';
-
+import banner from '../../assets/happiness.webp';
 
 export default makeStyles(()=>({
     imageContainer:{
-        width:'100%',
+        width:'95rem',
         position:'relative',
-        height:'85vh',
+        height:'100vh',
         display:'grid',
+        margin:'0 auto',
         placeContent:'center',
         textAlign:"center",
         // background:"black",
+        background:'var(--light-grey)',
         overflow:'hidden',
         fontFamily:'IBM Plex Sans,serif',
-    },
-    leftAbstract:{
-        height:'40rem',
-        width:'40rem',
-        position:'fixed',
-        left:'-20%',
-        top:'-10%',
-        borderRadius:'50%',
-        zIndex:'-1',
-        transform:'rotate(40deg)',
-        background:"#fc53b3",
-        "@media(max-width:1200px)":{
-            height:'30rem',
-            width:'30rem',
-            left:"-10%",
-            bottom:'20%'
-        },
-        "@media(max-width:700px)":{
-            height:'25rem',
-            width:'25rem',
-            left:"-10%",
-            opacity:'0.7',
-            bottom:'20%'
-        },
-        "@media(max-width:550px)":{
-            display:'none'
-        }
-
-    },
-    rightAbstract:{
-        height:'40rem',
-        width:'40rem',
-        bottom:'-10%',
-        right:'-20%',
-        borderRadius:'50%',
-        position:'fixed',
-        transform:'rotate(-45deg)',
-        background:'#3db3f2',
-        zIndex:"-1",
-        "@media(max-width:1200px)":{
-            height:'30rem',
-            width:'30rem',
-            right:'-10%',
-            top:'40%',
-        },
-        "@media(max-width:700px)":{
-            height:'25rem',
-            width:'25rem',
-            right:"0%",
-            top:'50%',
-            opacity:'0.7'
+        "@media(max-width:800px)":{
+            width:'100vw'
         },
         "@media(max-width:500px)":{
-            display:'none'
+            width:'calc(100vw - 0.2rem)'
         }
     },
     bannerTitle:{

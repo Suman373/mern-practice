@@ -16,6 +16,7 @@ font-family: 'Lobster', cursive; headings */
     --golden:#c9ae19;
     --white:#fffffe;
     --violet:#661a66;
+    --light-grey:#e9e3e3e7;
     --pink:#ff258b;
     --gradient1:linear-gradient(30deg,hotpink,blue);
     --glass:#20202027;
@@ -28,7 +29,7 @@ html{
 body{
     min-height:100vh;
     width:100vw;
-    background:var(--white);
+    background:var(--light-grey);
     overflow-x: hidden;
     position: relative;
 }

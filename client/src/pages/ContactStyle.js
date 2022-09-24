@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles(()=>({
     wrapper:{
-        height:'76vh',
+        height:'80vh',
         width:'100vw',
         display:'flex',
         justifyContent:'space-evenly',

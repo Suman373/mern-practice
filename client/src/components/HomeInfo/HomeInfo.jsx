@@ -6,19 +6,21 @@ const HomeInfo=()=>{
     const classes = useStyles();
     return(
         <>
-            <Container className={classes.homeInfoWrapper}>
-                <section className={classes.info1}>
+            <div className={classes.homeInfoWrapper}>
+                <section className={classes.homeInfoContainer}>
                     <h2>Why us?</h2>
-                    <div className={classes.flexContainer}>
+                    <div className={classes.homeInfoPara}>
+
                     </div>
                 </section>
 
-                <section className={classes.info2}>
+                <section className={classes.homeInfoContainer}>
                     <h2>Be the trend setter</h2>
-                    <div className={classes.flexContainer }>
+                    <div className={classes.homeInfoPara}>
+
                     </div>
                 </section>
-            </Container>
+            </div>
         </>
     );
 }
