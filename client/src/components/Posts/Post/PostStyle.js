@@ -21,20 +21,16 @@ export default makeStyles(()=>({
             minHeight:'30rem',
             width:'calc(100vw - 1.5rem)',
         },
-        '@media(max-width:400px)':{
-            width:'calc(100vw - 1rem)',
-        }
-       
+    
     }, 
     mediaCard:{
         maxHeight:'20rem',
         width:'100%',
         position:'relative',
-        opacity:'1',
         borderRadius:'1rem',
         border:'1px solid grey',
         "@media(max-width:500px)":{
-            height:'15rem',
+            height:'16rem',
         }
     },
     infoContainer:{
@@ -43,7 +39,7 @@ export default makeStyles(()=>({
     username:{
         fontSize:'1.4rem',
         fontWeight:'600',
-        color:'blue',
+        color:'var(--blue)',
         '@media(max-width:700px)':{
             fontSize:'1.3rem'
         },
@@ -53,7 +49,7 @@ export default makeStyles(()=>({
     },
     postTitle:{
         fontSize:"1.2rem",
-        color:'green',
+        color:'var(--pink)',
         margin:'10px 0',
         '@media(max-width:700px)':{
             fontSize:'1.1rem'
@@ -69,7 +65,7 @@ export default makeStyles(()=>({
             fontSize:'1rem'
         },
         '@media(max-width:500px)':{
-            fontSize:'0.9rem',
+            fontSize:'0.99rem',
         }
     },
     actionsContainer:{

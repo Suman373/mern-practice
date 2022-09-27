@@ -10,7 +10,7 @@ export default makeStyles(()=>({
         alignItems:'center',
         flexWrap:'wrap-reverse',
         flexDirection:'row-reverse',
-        overflow:'hidden',
+        overflowX:'hidden',
         '@media(max-width:700px)': {
             fontSize: '1.3rem',
             flexDirection:'column-reverse',

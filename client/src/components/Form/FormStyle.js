@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(() => ({
     wrapper: {
+        height:'max-content',
         margin: '2rem auto',
         textAlign: 'center',
         overflowX:'hidden',
@@ -35,19 +36,19 @@ export default makeStyles(() => ({
         textAlign: 'center',
         border: 'none',
         borderRadius:'1rem',
-        marginBottom:'10px',
+        marginBottom:'2rem',
         position: 'relative',
+        overflowX:'hidden',
         boxShadow: '0 0 4px grey',
         "@media(max-width:700px)":{
             width:'30rem',
             minHeight:'27.5rem',
         },
         "@media(max-width:500px)":{
-            width:'22rem',
-            margin:'0 auto'
+            width:'calc(100vw - 1rem)',
         },
         "@media(max-width:400px)":{
-            width:'20rem',
+            width:'calc(100vw - 0.8rem)',
             height:'30rem'
         }
     },
