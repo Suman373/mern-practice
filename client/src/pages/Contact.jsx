@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import useStyles from './ContactStyle';
 import './Contact.css';
-import Image from '../assets/form-image.jpg';
+import Image from '../assets/formimage.png';
 import Footer from "../components/Footer/Footer";
 
 const Contact = ()=>{

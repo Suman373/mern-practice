@@ -6,8 +6,7 @@ export default makeStyles(()=>({
         width:'100vw',
         textAlign:'center',
         padding:'1rem',
-        position:'fixed',
-        bottom:'0.6rem'
+        display:'inline',
     },
     footerPara:{
         fontSize:'1.3rem',

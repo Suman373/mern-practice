@@ -3,7 +3,7 @@ import { Container, Typography } from '@material-ui/core';
 import useStyles from './BannerStyle';
 import './Banner.css';
 import Button from '../Buttons/Button';
-import banner from '../../assets/bigbanner.png';
+
 import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
@@ -29,7 +29,7 @@ const Banner = () => {
                 <Container>
                     <div className={classes.bannerTitle}
                         id="banner-text-clip">
-                        You don't take a photograph, you make it
+                        Alter life by holding it still
                     </div>
                     <Typography className={classes.caption}>
                         Sharing your plogs is about to get better

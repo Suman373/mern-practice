@@ -14,13 +14,13 @@ const About=()=>{
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea enim officia animi! Quidem voluptas asperiores tempora explicabo autem. Perferendis, est quia! Sapiente facilis eos dolor delectus, excepturi dolore quis.
                 </p>
             </div>
-            <Footer/>
             <div className={classes.feedbackContainer}>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+            <Footer/>
         </main>
         </>
     );

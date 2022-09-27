@@ -1,9 +1,8 @@
-#banner-text-clip{
-    background: url('./assets/bluee.jpeg') no-repeat;
+/* #banner-text-clip{
+    background: linear-gradient(white,#ccc4c4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-align: center;
-    filter: drop-shadow(0 0 1px black);
     background-size: 150% 150%;
     transition:animation 1000ms;
     animation:sexymoves 6000ms infinite alternate;
@@ -15,4 +14,4 @@
     100%{
         background-position: 100% 0%;
     }
-}
+} */

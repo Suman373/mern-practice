@@ -33,8 +33,8 @@ export default makeStyles(()=>({
     },
     para:{
         fontSize:"1.5rem",
-        textAlign:"center",
-        margin:"10px 0",
+        textAlign:"left",
+        margin:"1rem auto",
         "@media(max-width:700px)":{
             fontSize:"1.3rem"
         },

@@ -22,7 +22,6 @@ export default makeStyles(()=>({
             width:'calc(100vw - 1.5rem)',
         },
         '@media(max-width:400px)':{
-            minHeight:'30rem',
             width:'calc(100vw - 1rem)',
         }
        
