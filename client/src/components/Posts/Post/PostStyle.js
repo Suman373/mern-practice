@@ -9,7 +9,7 @@ export default makeStyles(()=>({
         padding:'1rem',
         borderRadius:'1rem',
         border:'none',
-        boxShadow:'0 0 4px black',
+        boxShadow:'0 0 4px grey',
         fontFamily:'IBM Plex Sans, sans-serif',
         position:'relative',
         '@media(max-width:700px)':{
@@ -19,11 +19,11 @@ export default makeStyles(()=>({
         },
         '@media(max-width:500px)':{
             minHeight:'30rem',
-            width:'24rem',
+            width:'calc(100vw - 1.5rem)',
         },
         '@media(max-width:400px)':{
             minHeight:'30rem',
-            width:'22rem',
+            width:'calc(100vw - 1rem)',
         }
        
     }, 
@@ -33,7 +33,7 @@ export default makeStyles(()=>({
         position:'relative',
         opacity:'1',
         borderRadius:'1rem',
-        border:'1px solid black',
+        border:'1px solid grey',
         "@media(max-width:500px)":{
             height:'15rem',
         }
@@ -57,10 +57,10 @@ export default makeStyles(()=>({
         color:'green',
         margin:'10px 0',
         '@media(max-width:700px)':{
-            fontSize:'1rem'
+            fontSize:'1.1rem'
         },
         '@media(max-width:500px)':{
-            fontSize:'0.9rem'
+            fontSize:'1rem'
         }
     },
     descriptionPara:{
@@ -70,7 +70,7 @@ export default makeStyles(()=>({
             fontSize:'1rem'
         },
         '@media(max-width:500px)':{
-            fontSize:'0.8rem',
+            fontSize:'0.9rem',
         }
     },
     actionsContainer:{

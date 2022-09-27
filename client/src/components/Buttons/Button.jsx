@@ -7,7 +7,7 @@ const useStyles=makeStyles(()=>({
         fontSize:'1.2rem',
         width:'fit-content',
         padding:'10px 0.9rem',
-        background:'blue',
+        background:'var(--blue)',
         color:'white',
         margin:'0.5rem',
         border:'none',
@@ -20,10 +20,10 @@ const useStyles=makeStyles(()=>({
             transform:'scale(1.05)',
         },
         '@media(max-width:700px)':{
-            fontSize:'1.25rem',
+            fontSize:'1.2rem',
         },
-        '@media(max-width:400px)':{
-            fontSize:'1.1rem',
+        '@media(max-width:500px)':{
+            fontSize:'1rem',
         }
     }
 }))

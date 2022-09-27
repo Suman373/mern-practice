@@ -10,15 +10,14 @@ font-family: 'Lobster', cursive; headings */
 }
 
 :root{
-    --blue:#31318d;
+    --blue:#3838b8;
     --sea-green:#137949;
     --brownish : #572f2f;
     --golden:#c9ae19;
     --white:#fffffe;
     --violet:#661a66;
-    --light-grey:#e9e3e3e7;
+    --light-grey:#f8faffe7;
     --pink:#ff258b;
-    --gradient1:linear-gradient(30deg,hotpink,blue);
     --glass:#20202027;
 }
 
@@ -29,6 +28,7 @@ html{
 body{
     min-height:100vh;
     width:100vw;
+    margin:0 auto;
     background:var(--light-grey);
     overflow-x: hidden;
     position: relative;

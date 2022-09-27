@@ -113,22 +113,22 @@ const Form = ({ currentId, setCurrentId }) => {
                                 className={classes.creator_title_tag_style}
                                 value={postData.title}
                                 onChange={(e) => setPostData({ ...postData, title: e.target.value })}
-                                placeholder={'Enter the title'}>
+                                placeholder={'Title of post'}>
                             </input>
 
                             <TextareaAutosize
                                 variant='filled'
                                 required
-                                minRows={5}
-                                maxRows={5}
+                                minRows={4}
+                                maxRows={4}
                                 className={classes.textFieldStyle}
                                 value={postData.description}
                                 onChange={(e) => setPostData({ ...postData, description: e.target.value })}
-                                placeholder={'Write the description...'}>
+                                placeholder={'Small caption'}>
                             </TextareaAutosize>
 
                             <input
-                                placeholder={'Enter tags, comma separated'}
+                                placeholder={'Tags, comma separated'}
                                 className={classes.creator_title_tag_style}
                                 value={postData.tags}
                                 onChange={(e) => setPostData({ ...postData, tags: e.target.value.split(",") })}>
@@ -148,8 +148,15 @@ const Form = ({ currentId, setCurrentId }) => {
                         </form>
 
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button text={'Post'} onClick={(e) => handleSubmit(e)} style={{ margin: '1rem' }} />
-                            <Button text={'Clear'} onClick={(e) => handleClear(e)} style={{ margin: '1rem', background:'transparent',border:"1px solid blue", color:'blue'}} />
+                            <Button 
+                            text={'Post'} 
+                            onClick={(e) => handleSubmit(e)} 
+                            style={{ margin: '1rem', width:'8rem' }} />
+
+                            <Button 
+                            text={'Clear'} 
+                            onClick={(e) => handleClear(e)} 
+                            style={{ margin: '1rem', background:'transparent',border:"1px solid var(--blue)", color:'var(--blue)', width:'8rem'}} />
                         </div>
 
 
@@ -160,7 +167,7 @@ const Form = ({ currentId, setCurrentId }) => {
                             onClick={() => {
                                 setPostForm(!postForm);
                             }}
-                            text={'Create new'} />
+                            text={'Create'} />
 
                         {postUploaded ? <Typography className={classes.formClearedMessage}>Successfully uploaded ✅</Typography> : ''}
                     </>

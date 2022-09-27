@@ -10,7 +10,6 @@ export default makeStyles(()=>({
         margin:'0 auto',
         placeContent:'center',
         textAlign:"center",
-        // background:"black",
         background:'var(--light-grey)',
         overflow:'hidden',
         fontFamily:'IBM Plex Sans,serif',

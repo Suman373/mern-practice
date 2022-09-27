@@ -37,7 +37,7 @@ export default makeStyles(() => ({
         borderRadius:'1rem',
         marginBottom:'10px',
         position: 'relative',
-        boxShadow: '0 0 2px black',
+        boxShadow: '0 0 4px grey',
         "@media(max-width:700px)":{
             width:'30rem',
             minHeight:'27.5rem',
@@ -96,12 +96,12 @@ export default makeStyles(() => ({
         fontSize: '1.2rem',
         padding: '10px',
         color:'black',
-        width: 'calc(100% - 10px)',
+        width: 'calc(100% - 0.7rem)',
         background:'transparent',
         borderRadius:'1rem',
-        boxShadow: '0 0 5px black',
+        boxShadow: '0 0 5px grey',
         "&:focus":{
-            outline:'1px solid blue',
+            outline:'1px solid var(--blue)',
         },
         "@media(max-width:700px)":{
             fontSize:'1.2rem'
@@ -109,7 +109,6 @@ export default makeStyles(() => ({
         "@media(max-width:500px)":{
             fontSize:'1rem',
             padding:'10px',
-            boxShadow:' 0 0 2px black'
         }
     },
     textFieldStyle: {
@@ -123,10 +122,10 @@ export default makeStyles(() => ({
         resize: 'none',
         border: 'none',
         borderRadius:'1rem',
-        boxShadow: '0 0 5px black',
+        boxShadow: '0 0 5px grey',
         color:'black',
         "&:focus":{
-            outline:'1px solid blue',
+            outline:'1px solid var(--blue)',
         },
         background: 'transparent',
         '&::-webkit-scrollbar': {
@@ -139,7 +138,6 @@ export default makeStyles(() => ({
         "@media(max-width:500px)":{
             fontSize:'1rem',
             padding:'10px',
-            boxShadow:' 0 0 2px black'
         }
     },
     fileUpload: {
