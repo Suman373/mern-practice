@@ -8,12 +8,15 @@ export default makeStyles(()=>({
         justifyContent:'space-evenly',
         alignItems:'center',
         overflow:'hidden',
+        "@media(max-width:500px)":{
+            flexDirection:'column',
+            justifyContent:'flex-start'
+        }
     },
     formWrapper:{
         textAlign:'center',
         padding:'1rem',
         color:'#ff258b',
-        textShadow:'0 0 1px black',
     },
     formTitle:{
         fontSize:'2.7rem',
@@ -22,7 +25,7 @@ export default makeStyles(()=>({
             fontSize:"2.2rem"
         },
         "@media(max-width:500px)":{
-            fontSize:'1.5rem',
+            fontSize:'1.7rem',
         }
     },
     imgContainer:{

@@ -11,7 +11,6 @@ export default makeStyles(()=>({
     footerPara:{
         fontSize:'1.3rem',
         color:'#ff258b',
-        textShadow:'0 0 1px grey',
         "@media(max-width:700px)":{
             fontSize:'1.2rem'
         },

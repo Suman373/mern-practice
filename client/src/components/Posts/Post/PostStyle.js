@@ -24,7 +24,7 @@ export default makeStyles(()=>({
     
     }, 
     mediaCard:{
-        maxHeight:'20rem',
+        height:'55%',
         width:'100%',
         position:'relative',
         borderRadius:'1rem',

@@ -5,7 +5,7 @@ export default makeStyles(()=>({
     imageContainer:{
         width:'100vw',
         position:'relative',
-        height:'100vh',
+        height:'90vh',
         display:'grid',
         margin:'0 auto',
         placeContent:'center',

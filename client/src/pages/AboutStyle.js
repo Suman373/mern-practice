@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles(()=>({
     aboutWrapper:{
-        maxHeight:'100vh',
+        minHeight:'100vh',
         width:'100vw',
         overflow:'hidden',
     },
@@ -14,11 +14,10 @@ export default makeStyles(()=>({
         padding:'1rem',
         lineHeight:'2',
         color:'#ff258b',
-        textShadow:'0 0 1px black',
         "@media(max-width:700px)":{
             width:'20rem'
         },
-        "@media(max-width:450px)":{
+        "@media(max-width:500px)":{
             width:'fit-content',
         }
     },
@@ -36,10 +35,10 @@ export default makeStyles(()=>({
         textAlign:"left",
         margin:"1rem auto",
         "@media(max-width:700px)":{
-            fontSize:"1.3rem"
+            fontSize:"1.2rem"
         },
         "@media(max-width:400px)":{
-            fontSize:"1.2rem"
+            fontSize:"1rem"
         },
     }
 }))
