@@ -12,13 +12,12 @@ export default makeStyles(() => ({
         }
     },
     headingStyle: {
-        fontSize: '2.4rem',
+        fontSize: '2rem',
         fontFamily:'sans-serif',
         color:'#ff258b',
-        textShadow:'0 0 1px black',
         marginBottom: '1.2rem',
         '@media(max-width:700px)': {
-            fontSize: '1.8rem',
+            fontSize: '1.5rem',
         },
         '@media(max-width:500px)': {
             fontSize: '1.2rem',
@@ -30,7 +29,6 @@ export default makeStyles(() => ({
         flexDirection: 'column',
         justifyContent: 'center',
         gap: '1rem',
-        fontFamily: 'IBM Plex Sans, sans-serif',
         width: '45rem',
         background: 'transparent',
         textAlign: 'center',
@@ -79,16 +77,15 @@ export default makeStyles(() => ({
         gap:'1rem',
     },
     createPostTitle: {
-        fontSize: '1.6rem',
-        fontFamily: 'sans-serif',
+        fontSize: '1.5rem',
         margin: '1rem',
         fontWeight:'600',
         color: "black",
         '@media(max-width:700px)': {
-            fontSize: '1.3rem',
+            fontSize: '1.35rem',
         },
         '@media(max-width:400px)': {
-            fontSize: '1.1rem',
+            fontSize: '1.2rem',
         },
     },
     creator_title_tag_style: {
@@ -116,10 +113,9 @@ export default makeStyles(() => ({
         width: 'calc(100% - 10px)',
         height: '10rem',
         outline: 'none',
-        fontWeight:'600',
         fontSize: "1.2rem",
         padding: '10px',
-        fontFamily: 'IBM Plex Sans, sans-serif',
+        fontFamily: 'sans-serif',
         resize: 'none',
         border: 'none',
         borderRadius:'1rem',
@@ -148,11 +144,10 @@ export default makeStyles(() => ({
         borderBottom:'1px solid black'
     },
     formClearedMessage: {
-        fontSize: "1.3rem",
+        fontSize: "1.2rem",
         color: 'green',
         textAlign: 'center',
-        fontFamily: 'serif',
-        margin: '10px',
+        margin: '0.7rem',
         "@media(max-width:500px)":{
             fontSize:'1rem'
         }

@@ -29,10 +29,16 @@ const HomeInfo = () => {
                         <span ><img src={city} alt="" /></span>
                     </div>
                 </section>
-                <section className={classes.homeInfoContainer}>
+                <section className={classes.homeCommunity}>
                     <h2>Growing community</h2>
-                    <div>
-                        
+                    <div className={classes.communityFlexBox}>
+                        <div  className={classes.communityImgCard}>
+                            <img src={flowergirl} alt="" />
+                            <img src={flowergirl} alt="" />
+                        </div>
+                        <div className={classes.communityTextCard}>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid sequi modi quisquam magnam nostrum dicta ipsa! Eligendi, nemo magnam. Facere.</p>
+                        </div>
                     </div>
                 </section>
 

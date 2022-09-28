@@ -22,7 +22,7 @@ export default makeStyles(()=>({
         }
     },
     heading:{
-        fontSize:"2.6rem",
+        fontSize:"2.4rem",
         "@media(max-width:700px)":{
             fontSize:"2rem"
         },
@@ -31,11 +31,11 @@ export default makeStyles(()=>({
         },
     },
     para:{
-        fontSize:"1.5rem",
+        fontSize:"1.3rem",
         textAlign:"left",
         margin:"1rem auto",
         "@media(max-width:700px)":{
-            fontSize:"1.2rem"
+            fontSize:"1.1rem"
         },
         "@media(max-width:400px)":{
             fontSize:"1rem"

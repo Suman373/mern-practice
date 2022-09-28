@@ -19,13 +19,13 @@ export default makeStyles(()=>({
         color:'#ff258b',
     },
     formTitle:{
-        fontSize:'2.7rem',
+        fontSize:'2.5rem',
         margin:'1rem',
         "@media(max-width:700px)":{
-            fontSize:"2.2rem"
+            fontSize:"2rem"
         },
         "@media(max-width:500px)":{
-            fontSize:'1.7rem',
+            fontSize:'1.6rem',
         }
     },
     imgContainer:{

@@ -37,7 +37,7 @@ export default makeStyles(()=>({
             }
         },
     },
-    homeInfoContainer:{
+    homeCommunity:{
         minHeight:'100vh',
         width:'60rem',
         margin:'1rem',
@@ -55,4 +55,33 @@ export default makeStyles(()=>({
             }
         }
     },
+    communityFlexBox:{
+        minHeight:'100vh',
+        width:'100%',
+        oveflowX:'hidden',
+        background:'var(--blue)',
+        // display:'flex',
+        // justifyContent:'center',
+        // alignItems:'center',
+        // flexWrap:'wrap',
+        display:'grid',
+        gridTemplateColumns:'max(20rem, 1fr)',
+        "& div":{
+            border:'2px solid black'
+        }
+    },
+    communityImgCard:{
+        padding:'1rem',
+        "& img":{
+            margin:'1rem',
+            padding:'1rem',
+            height:'25rem',
+            width:'25rem'
+        }
+    },
+    communityTextCard:{
+        padding:'1rem',
+        fontSize:'1.5rem',
+        color:'black'
+    }
 }));

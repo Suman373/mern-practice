@@ -10,7 +10,6 @@ export default makeStyles(()=>({
         borderRadius:'1rem',
         border:'none',
         boxShadow:'0 0 4px grey',
-        fontFamily:'IBM Plex Sans, sans-serif',
         position:'relative',
         '@media(max-width:700px)':{
             height:'35rem',
@@ -37,35 +36,35 @@ export default makeStyles(()=>({
         padding:'1rem',
     },
     username:{
-        fontSize:'1.4rem',
+        fontSize:'1.3rem',
         fontWeight:'600',
         color:'var(--blue)',
         '@media(max-width:700px)':{
-            fontSize:'1.3rem'
+            fontSize:'1.2rem'
         },
         '@media(max-width:500px)':{
             fontSize:'1.1rem'
         }
     },
     postTitle:{
-        fontSize:"1.2rem",
+        fontSize:"1.1rem",
         color:'var(--pink)',
         margin:'10px 0',
         '@media(max-width:700px)':{
-            fontSize:'1.1rem'
+            fontSize:'1rem'
         },
         '@media(max-width:500px)':{
-            fontSize:'1rem'
+            fontSize:'0.89rem'
         }
     },
     descriptionPara:{
-        fontSize:'1.1rem',
+        fontSize:'1.09rem',
         padding:'5px',
         '@media(max-width:700px)':{
-            fontSize:'1rem'
+            fontSize:'0.9rem'
         },
         '@media(max-width:500px)':{
-            fontSize:'0.99rem',
+            fontSize:'0.88rem',
         }
     },
     actionsContainer:{
@@ -99,7 +98,7 @@ export default makeStyles(()=>({
         },
     },
     edit:{
-        fontSize:'1.5rem',
+        fontSize:'1.4rem',
         position:'absolute',
         color:'orange',
         background:'none',

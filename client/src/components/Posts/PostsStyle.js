@@ -12,27 +12,22 @@ export default makeStyles(()=>({
         flexDirection:'row-reverse',
         overflowX:'hidden',
         '@media(max-width:700px)': {
-            fontSize: '1.3rem',
             flexDirection:'column-reverse',
             justifyContent:'flex-start'
-        },
-        '@media(max-width:500px)': {
-            fontSize: '1rem',
         },
 
     },
     titleStyle:{
-        fontSize:'2rem',
+        fontSize:'1.6rem',
         color:'#ff258b',
-        textShadow:'0 0 1px black',
         textAlign:"center",
-        marginTop:'-3rem',
+        marginTop:'2rem',
         padding:'1rem',
         '@media(max-width:700px)': {
             fontSize: '1.3rem',
         },
         '@media(max-width:500px)': {
-            fontSize: '1rem',
+            fontSize: '1.1rem',
         },
     }
 }));
