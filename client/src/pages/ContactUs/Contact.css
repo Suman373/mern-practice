@@ -4,7 +4,7 @@
     width:30rem;
     padding:10px;
     margin:10px;
-    background: blue;
+    background: var(--blue);
     display:flex;
     flex-direction: column;
     justify-content: center;

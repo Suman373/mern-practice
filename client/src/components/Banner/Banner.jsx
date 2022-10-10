@@ -18,9 +18,9 @@ const Banner = () => {
         navigate('/checkPosts');
     }
 
-    const redirectContact=(e)=>{
+    const redirectRegister=(e)=>{
         e.preventDefault();
-        navigate('/contact');
+        navigate('/register');
     }
 
     return (
@@ -29,10 +29,10 @@ const Banner = () => {
                 <Container>
                     <div className={classes.bannerTitle}
                         id="banner-text-clip">
-                        Life is short. Capture every moment
+                        Life is short. Capture every moment.
                     </div>
                     <Typography className={classes.caption}>
-                        Join us to showcase your photography skills and share with the world.
+                        Join us to showcase your <b>plogging</b> skills and share with the world.
                     </Typography>
                     <Button
                         style={{
@@ -49,7 +49,7 @@ const Banner = () => {
                             background:'transparent',
                             border:'1px solid white'
                         }}
-                        onClick={(e) => redirectContact(e)}
+                        onClick={(e) => redirectRegister(e)}
                         text={'Create account'}
                     />
                 </Container>

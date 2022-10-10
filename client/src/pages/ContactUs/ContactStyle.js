@@ -16,7 +16,7 @@ export default makeStyles(()=>({
     formWrapper:{
         textAlign:'center',
         padding:'1rem',
-        color:'#ff258b',
+        color:'black',
     },
     formTitle:{
         fontSize:'2.5rem',

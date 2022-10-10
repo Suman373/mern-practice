@@ -1,9 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import useStyles from './ContactStyle';
 import './Contact.css';
-import Image from '../assets/formimage.png';
-import Footer from "../components/Footer/Footer";
+import Image from '../../assets/formimage.png';
+import Footer from '../../components/Footer/Footer';
 
 const Contact = ()=>{
     // style objs

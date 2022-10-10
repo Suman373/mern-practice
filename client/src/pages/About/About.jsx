@@ -1,6 +1,6 @@
 import React from "react";
 import useStyles from './AboutStyle';
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 const About=()=>{
     // style objs

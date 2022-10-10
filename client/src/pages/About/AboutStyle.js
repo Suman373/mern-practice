@@ -13,7 +13,7 @@ export default makeStyles(()=>({
         margin:'1rem auto',
         padding:'1rem',
         lineHeight:'2',
-        color:'#ff258b',
+        color:'black',
         "@media(max-width:700px)":{
             width:'20rem'
         },
