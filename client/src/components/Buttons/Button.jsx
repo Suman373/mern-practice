@@ -15,9 +15,8 @@ const useStyles=makeStyles(()=>({
         borderRadius:'1rem',
         cursor:'pointer',
         '&:hover':{
-            opacity:'0.8',
-            boxShadow:'0 0 4px black ',
-            transform:'scale(1.05)',
+            boxShadow:'0 0 15px var(--glass) ',
+            transform:'scale(1.02)',
         },
         '@media(max-width:700px)':{
             fontSize:'1.2rem',

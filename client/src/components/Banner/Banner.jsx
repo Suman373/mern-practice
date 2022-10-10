@@ -25,31 +25,36 @@ const Banner = () => {
 
     return (
         <>
-            <div id="home" className={classes.imageContainer}>
+            <section id="home" className={classes.imageContainer}>
                 <Container>
                     <div className={classes.bannerTitle}
                         id="banner-text-clip">
-                        Alter life by holding it still
+                        Life is short. Capture every moment
                     </div>
                     <Typography className={classes.caption}>
-                        Sharing your plogs is about to get better
+                        Join us to showcase your photography skills and share with the world.
                     </Typography>
                     <Button
+                        style={{
+                            color:'var(--pink)',
+                            background:'white',
+                            border:'1px solid var(--pink)'
+                        }}
                         onClick={(e) => checkPosts(e)}
                         text={'Explore'}
                     />
                     <Button
                         style={{
-                            color:'blue',
+                            color:'white',
                             background:'transparent',
-                            border:'1px solid blue'
+                            border:'1px solid white'
                         }}
                         onClick={(e) => redirectContact(e)}
-                        text={'Get in touch'}
+                        text={'Create account'}
                     />
                 </Container>
                 
-            </div>
+            </section>
         </>
     )
 }

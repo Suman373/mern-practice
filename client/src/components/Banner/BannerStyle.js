@@ -23,16 +23,17 @@ export default makeStyles(()=>({
             position:'absolute',
             top:'0',
             left:'0',
-            content:" '' ",
+            content:"''",
             height:'100%',
             width:'100%',
             zIndex:'-1',
-            background:`url(${hero}) no-repeat center/cover`,
-            opacity:'0.8'
+            background:`linear-gradient(45deg,var(--rose-pink),var(--pink))`,
+            transform:'scaleX(1.4)',
+            borderRadius:'0 0 50% 50%/0 0 100% 100%'
         }
     },
     bannerTitle:{
-        fontSize:'4.5rem',
+        fontSize:'4rem',
         fontFamily:'serif',
         fontWeight:'900',
         height:'fit-content',
