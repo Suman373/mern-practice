@@ -36,7 +36,6 @@ const Navbar=()=>{
 
             <div  className={!hamburgerOpen ? "menuContainer" : "menuContainer open"}>
          
-                <Link to={'/#home'}>Home</Link>
                 <Link to={'/checkPosts'}>Posts</Link>
                 <Link to={'/about'}>About</Link>
                 <Link to={'/contact'}>Contact Us</Link>

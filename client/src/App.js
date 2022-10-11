@@ -5,11 +5,11 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import Form from './components/Form/Form';
 import Posts from './components/Posts/Posts.jsx';
-import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/Banner/Banner';
 import Contact from "./pages/ContactUs/Contact";
 import About from "./pages/About/About";
 import Register from './pages/Register/Register';
+import Navbar from './components/Navbar/Navbar';
 import { getPosts } from './actions/posts';
 import useStyles from './AppStyle';
 import { AiOutlineArrowUp } from 'react-icons/ai';
@@ -46,7 +46,6 @@ const App = () => {
     return (
         <BRouter>
             <div>
-                <Navbar />
                 <Routes>
                     <Route path="/" element={
                         <>
@@ -61,6 +60,7 @@ const App = () => {
                     }></Route>
                     <Route path="/checkPosts" element={
                          <>
+                         <Navbar/>
                          {showScroll ?
                              <button
                                  className={classes.scrollBtn}
