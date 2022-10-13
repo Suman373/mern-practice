@@ -26,24 +26,24 @@ const Contact = () => {
                     <img className={classes.formImage} src={Image} alt="cartoon picture of form" />
                 </div>
                 <section className={classes.formWrapper}>
-                        <h1 className={classes.formTitle}>Help us become better</h1>
-                        <p className={classes.formPara}>Share your valuable feedback so that we can improve</p>
-                    <form className="contact-form" onSubmit={handleSubmit}>
+                        <h2>Help us become better</h2>
+                        <p >Share your valuable feedback so that we can improve</p>
+                    <form onSubmit={handleSubmit}>
                         <label htmlFor="name">
                             Name
+                            <input type="text" required />
                         </label>
-                        <input type="text" required />
 
                         <label htmlFor="email">
                             Email
+                            <input type="email" required />
                         </label>
-                        <input type="email" required />
 
                         <label htmlFor="textarea">
                             Text
+                            <textarea id="textarea" required></textarea>
                         </label>
-                        <textarea id="textarea" required></textarea>
-
+                    
                         <button
                             className="submit-btn"
                             type="submit"

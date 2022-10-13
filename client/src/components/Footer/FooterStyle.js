@@ -10,7 +10,8 @@ export default makeStyles(()=>({
     },
     footerPara:{
         fontSize:'1.3rem',
-        color:'#ff258b',
+        // color:'#ff258b',
+        color:'black',
         "@media(max-width:700px)":{
             fontSize:'1.2rem'
         },

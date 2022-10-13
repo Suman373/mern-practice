@@ -1,12 +1,14 @@
 import React from "react";
 import useStyles from './AboutStyle';
 import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 
 const About=()=>{
     // style objs
     const classes = useStyles();
     return(
         <>
+        <Navbar/>
         <main className={classes.aboutWrapper}>
             <div className={classes.aboutInfo}>
                 <h1 className={classes.heading}>About Plogify</h1>

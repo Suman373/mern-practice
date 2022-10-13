@@ -6,7 +6,9 @@ export default makeStyles(({
         width:'100vw',
         display:'flex',
         justifyContent:'center',
-        gap:'1rem'
+        alignItems:'center',
+        gap:'1rem',
+        overflow:'hidden',
     },
 
     registerFormContainer:{
@@ -20,7 +22,7 @@ export default makeStyles(({
         "&>h2":{
             fontSize:'2.5rem',
             color:'black',
-            margin:'1rem 0',
+            margin:'0.5rem 0',
 
             "@media(max-width:500px)":{
                 fontSize:'1.8rem',
@@ -49,7 +51,7 @@ export default makeStyles(({
 
             "& input":{
                 fontSize:'1.2rem',
-                height:'2.2rem',
+                height:'2.4rem',
                 color:'var(--blue)',
                 padding:'0.5rem',
                 margin:'0.5rem 0',
@@ -78,23 +80,23 @@ export default makeStyles(({
         // media query for the registerFormContainer
         "@media(min-width:900px)":{
             width:'30rem',
-            // background:'black',
         },
         "@media(max-width:700px)":{
             margin:'0 auto',
             width:'90vw',
         },
-        "@media(max-width:500px)":{
-            width:'calc(100vw - 0.8rem)',
-        }
+        // "@media(max-width:500px)":{
+        //     width:'90vw',
+        //     margin:'0 auto'
+        // }
     },
     registerFormImage:{
         minHeight:'30rem',
-        width:'30rem',
+        width:'35rem',
         margin:'1rem 0',
-        background:'yellow',
+        background:'var(--rose-pink)',
 
-        "@media(max-width:700px)":{
+        "@media(max-width:800px)":{
             display:'none',
         }
     }
