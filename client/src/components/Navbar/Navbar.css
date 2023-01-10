@@ -4,6 +4,7 @@
     /* background:pink; */
     position: fixed;
     z-index: 9999;
+    backdrop-filter: blur(8px);
 }
 .navbar-wrapper nav{
     height: 100%;

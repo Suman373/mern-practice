@@ -1,17 +1,13 @@
 import React from 'react';
-import useStyles from './FooterStyle';
+import './Footer.css';
 
-const Footer = ()=>{
-    // style objs
-    const classes = useStyles();
-    return(
-        <>
-            <footer className={classes.footerWrapper}>
-                    <p className={classes.footerPara}>
-                        Copyright &copy; 2022 Plogify All Rights Reserved 
-                    </p>
-            </footer>
-        </>
+const Footer = () => {
+    return (
+        <div className="footer-wrapper">
+            <p className="copyright">
+                &copy;2023 Made by Suman Roy in India
+            </p>
+        </div>
     );
 }
 

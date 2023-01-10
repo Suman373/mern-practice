@@ -1,0 +1,12 @@
+.footer-wrapper{
+    height: 5rem;
+    width: 100vw;
+    background: black;
+    color:white;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+.footer-wrapper p{
+    font-size: 1.2rem;
+}
