@@ -1,17 +1,77 @@
-/* #banner-text-clip{
-    background: linear-gradient(white,#ccc4c4);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    text-align: center;
-    background-size: 150% 150%;
-    transition:animation 1000ms;
-    animation:sexymoves 6000ms infinite alternate;
+.banner-wrapper {
+    min-height: 100vh;
+    /* padding-top: 5rem; */
+    background: linear-gradient(30deg, #130743, black);
+    width: 100vw;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
 }
-@keyframes sexymoves{
-    0%{
-        background-position: 50% 100%;
-    }
-    100%{
-        background-position: 100% 0%;
-    }
-} */
+
+.banner-text {
+    height: 100vh;
+    width: 35rem;
+    display: grid;
+    place-content: center;
+    padding: 0 1rem;
+}
+.banner-text h1 {
+    font-size: 2.8rem;
+    color: hotpink;
+    margin: 1rem 0;
+}
+.banner-text p {
+    font-size: 1.3rem;
+    color: white;
+    margin: 1rem 0;
+}
+.btn-container{
+    margin-top: 0.5rem;
+    min-height: fit-content;
+    width: fit-content;
+}
+.btn-container button{
+    font-size: 1.2rem;
+    padding:0.8rem 1.6rem;
+    border-radius: 1.5rem;
+    color:white;
+    background:hotpink;
+    border:none;
+    margin-right: 1.5rem;
+    position: relative;
+}
+.btn-container button::after{
+    position: absolute;
+    content:"";
+    bottom: -1.5rem;
+    left:0;
+    height: 0.1rem;
+    border-radius: 1rem;
+    /* box-shadow: -1px 0 10px white; */
+    width: 0;
+    background: hotpink;
+    box-shadow: 0 0 6px hotpink;
+    filter:blur(3px);
+}
+.btn-container button:hover::after{
+    width: 100%;
+}
+.btn-container button:hover{
+    box-shadow: 0 0 7px hotpink;
+    transform: scale(1.005);
+}
+.btn-container button:nth-child(2){
+    color:white;
+    background: transparent;
+    border:1px solid hotpink;
+}
+/* right  */
+.banner-img {
+    height: 100vh;
+    width: 35rem;
+    display: grid;
+    place-content: center;
+    padding: 0 1rem;
+}

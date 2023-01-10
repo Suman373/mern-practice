@@ -1,13 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Server for souvenir application",
-  "main": "index.js",
+  "description": "node express server",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js ",
-    "client":"npm start --prefix client"
+    "start": "nodemon server.js ",
+    "client":"npm start"
   },
-  "author": "Suman Roy (Suman373)",
+  "author": "Suman Roy",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
